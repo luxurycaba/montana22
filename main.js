@@ -89,7 +89,7 @@ bienvenida.addEventListener("click", () => {
   const texto = `Bienvenido/a a… 💸 *MONTANA 22* 💸
 
 El mejor sitio de entretenimiento: 
-https://citygame.casino🎰
+https://citygame.casino 🎰
 
 ⏰ *ABIERTO 24HS* ⏰
 
