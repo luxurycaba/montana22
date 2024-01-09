@@ -66,9 +66,7 @@ registrar.addEventListener("click", function (e) {
   let user = document.getElementById("usuario").value;
   console.log(user);
 
-  const texto = `*Ya podes comenzar a jugar* 😁
-
-👩‍💻 *Usuario:* ${user}
+  const texto = `👩‍💻 *Usuario:* ${user}
 🔐 *Clave:* vip123
  
 Sitio web: https://citygame.casino 🎰`;
@@ -90,6 +88,8 @@ bienvenida.addEventListener("click", () => {
 
 El mejor sitio de entretenimiento: 
 https://citygame.casino 🎰
+
+Mi nombre es Valu ❤️
 
 ⏰ *ABIERTO 24HS* ⏰
 
