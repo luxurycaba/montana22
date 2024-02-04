@@ -99,7 +99,7 @@ Mi nombre es Valu ❤️
 
 🚨 *RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR* 🚨
 
-Avíseme si le interesa y le creamos usuario así comienza a jugar, divertirse y *GANAR* 🍀`;
+Si querés comenzar a jugar dejanos tu *NOMBRE* y *APELLIDO* debajo de este mensaje para generar tu usuario 🍀`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
