@@ -7,6 +7,7 @@ let retiro = document.getElementById("retiro");
 let retiroExitoso = document.getElementById("retiroExitoso");
 let premioEnviado = document.getElementById("premioEnviado");
 let contraseña = document.getElementById("contraseña");
+let referidos = document.getElementById("referidos");
 let noIngreso = document.getElementById("noIngreso");
 let soporte = document.getElementById("soporte");
 let cbuEquivocado = document.getElementById("cbuEquivocado");
@@ -27,12 +28,15 @@ form.addEventListener("submit", function (e) {
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `*Datos de la cuenta:*
-🔹 *Nombre del Titular:* *${inputNombre}*
-🔹 *CBU:* *${inputCBU}*
-🔹 *Alias:* *${inputAlias}*
+      const texto = `Datos de nuestra cuenta:
+🔹 Nombre del Titular: *${inputNombre}*
+🔹 CBU: *${inputCBU}*
+🔹 Alias: *${inputAlias}*
 
-*INGRESÁ ACÁ PARA JUGAR:* https://citygame.casino`;
+✅ Enviar debajo comprobante y usuario asignado
+
+INGRESÁ ACÁ PARA JUGAR: 
+https://citygame.casino`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -84,22 +88,21 @@ Sitio web: https://citygame.casino 🎰`;
 });
 
 bienvenida.addEventListener("click", () => {
-  const texto = `Bienvenido/a a… 💸 *MONTANA 22* 💸
+  const texto = `Bienvenido/a a.. 💸 *MONTANA 22* 💸
 
 El mejor sitio de entretenimiento: 
 https://citygame.casino 🎰
 
-Mi nombre es Valu ❤️
+Mi nombre es Valu 👩🏼‍💻
 
 ⏰ *ABIERTO 24HS* ⏰
 
 💰 *CARGA MÍNIMA $1000*
 💰 *RETIRO MÍNIMO $2000*
-🏦 *UN RETIRO CADA 24HS*
 
 🚨 *RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR* 🚨
 
-Si querés comenzar a jugar dejanos tu *NOMBRE* y *APELLIDO* debajo de este mensaje para generar tu usuario 🍀`;
+Si querés comenzar a jugar dejanos tu *NOMBRE* o *APODO* debajo de este mensaje para generar tu usuario 🍀`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -122,20 +125,13 @@ pedirUsuario.addEventListener("click", () => {
 });
 
 retiro.addEventListener("click", () => {
-  const texto = `⚜ Para retirar su dinero responda este mensaje indicandonos *EN ORDEN*: ⚜
+  const texto = `Cómo retirar tu 💰? envieme: 
 
-◾ Usuario de la plataforma
-◾ Nombre y apellido que figura en tu cuenta bancaria
-◾ Monto que deseas retirar
-◾ CBU / CVU
-◾ Alias
+1-  Monto de su premio
+2- Su cbu o alias 
+3- Nombre completo del titular que recibe la transferencia 
 
-💰 *RETIRO MÍNIMO: $2.000* 💰
-💰 *RETIRO MÁXIMO POR DIA: $50.000* 💰
-
-⏰ *1 retiro cada 24HS* ⏰
-
-*Su chat será archivado y enviado al sector pagos, por ende, no será leido de manera frecuente, SEA PACIENTE.*`;
+🔔 Recordatorio: La bonificación *NO* es extraible‼️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -186,8 +182,24 @@ Por favor, recargá la página y si es posible, *copiá y pegá* los datos así 
   document.body.removeChild(elementoTemporal);
 });
 
+referidos.addEventListener("click", () => {
+  const texto = `Muchísima suerte 🍀🤩 
+
+📲 Agéndanos para poder acceder a nuestras promociones diarias 🎁
+
+‼️ Cada *3 referidos* que vengan de tu parte y *comiencen a JUGAR* con nosotros, se te *regala $2000* en fichas 💯`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
 noIngreso.addEventListener("click", () => {
-  const texto = `Tu transferencia todavía no impactó, *tené en cuenta que a veces las transferencias se demoran.* Si el dinero no ingresa a nuestra cuenta bancaria, no tenemos autorizado cargar las fichas.
+  const texto = `🚫‼️Tu transferencia todavía no impactó ‼️🚫
+*Tené en cuenta que a veces las transferencias se demoran.*  Si el dinero no ingresa a nuestra cuenta bancaria, no tenemos autorizado cargar las fichas.
 🙌🏻 *Aguardá un momento y cuando ingrese tu trasnferencia tus fichas van a ser cargadas* 🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
