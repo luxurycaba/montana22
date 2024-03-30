@@ -88,21 +88,21 @@ Sitio web: https://citygame.casino 🎰`;
 });
 
 bienvenida.addEventListener("click", () => {
-  const texto = `Bienvenido/a a.. 💸 *MONTANA 22* 💸
+  const texto = `Hola!! Soy *Valu* y voy ser tu *MEJOR CAJERA* 🤩🤩
+
+Bienvenido/a a.. 💸 *MONTANA 22* 💸
 
 El mejor sitio de entretenimiento: 
 https://citygame.casino 🎰
 
-Mi nombre es Valu 👩🏼‍💻
-
 ⏰ *ABIERTO 24HS* ⏰
 
-💰 *CARGA MÍNIMA $1000*
-💰 *RETIRO MÍNIMO $2000*
+💰 *CARGA MÍNIMA $1000* 💰
+💰 *RETIRO MÍNIMO $2000* 💰
 
 🚨 *RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR* 🚨
 
-Si querés comenzar a jugar dejanos tu *NOMBRE* o *APODO* debajo de este mensaje para generar tu usuario 🍀`;
+Si querés comenzar a jugar dejanos el usuario que queres que te creemos ejemplo: Valuubet22`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -183,11 +183,14 @@ Por favor, recargá la página y si es posible, *copiá y pegá* los datos así 
 });
 
 referidos.addEventListener("click", () => {
-  const texto = `Muchísima suerte 🍀🤩 
+  const texto = `🤩🍀 *MUCHA SUERTE* 🍀🤩 
 
 📲 Agéndanos para poder acceder a nuestras promociones diarias 🎁
 
-‼️ Cada *3 referidos* que vengan de tu parte y *comiencen a JUGAR* con nosotros, se te *regala $2000* en fichas 💯`;
+🤑🎁 *NUEVA PROMOCIÓN* 🎁🤑
+‼ POR CADA REFERIDO que vengan de tu parte y comiencen a JUGAR con nosotros, se te *regalará* $1500 en fichas. ‼
+
+🙌🏻🙌🏻 *Super fácil* 🙌🏻🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
