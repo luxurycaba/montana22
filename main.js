@@ -84,9 +84,9 @@ Plataforma: https://citygame.casino 🎰
 (de lo contrario puede perder su dinero) 
 
 Datos de nuestra cuenta:
-🔹 Nombre del Titular: *Ludmila Estefania Pascot*
-🔹 CBU: *0000076500000017190095*
-🔹 Alias: *lpascot.ppay*
+🔹 Nombre del Titular: *Luciano Rene Zalazar*
+🔹 CBU: *0000076500000017239833*
+🔹 Alias: *lzalazar125.ppay*
 
 ✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
