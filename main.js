@@ -88,21 +88,25 @@ Sitio web: https://citygame.casino 🎰`;
 });
 
 bienvenida.addEventListener("click", () => {
-  const texto = `Hola!! Soy *Valu* y voy ser tu *MEJOR CAJERA* 🤩🤩
+  const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
 
-Bienvenido/a a.. 💸 *MONTANA 22* 💸
+Plataforma: https://citygame.casino 🎰
 
-El mejor sitio de entretenimiento: 
-https://citygame.casino 🎰
+🎁 REGALO de bienvenida 100% de BONO 🎁
 
-⏰ *ABIERTO 24HS* ⏰
+👩‍💻 Usuario: 
+🔐 Clave: vip123
+💰 CARGA MÍNIMA $1000 
 
-💰 *CARGA MÍNIMA $1000* 💰
-💰 *RETIRO MÍNIMO $2000* 💰
+🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
+(de lo contrario puede perder su dinero) 
 
-🚨 *RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR* 🚨
+Datos de nuestra cuenta:
+🔹 Nombre del Titular: *Ludmila Estefania Pascot*
+🔹 CBU: *0000076500000017190095*
+🔹 Alias: *lpascot.ppay*
 
-Si querés comenzar a jugar dejanos el usuario que queres que te creemos ejemplo: Valuubet22`;
+✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
