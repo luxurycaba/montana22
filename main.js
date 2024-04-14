@@ -258,12 +258,20 @@ Por favor, aguardá con paciencia a que ingresemos a esa cuenta y verifiquemos q
 });
 
 sistemaDePagos.addEventListener("click", () => {
-  const texto = `Los retiros se solicitan por este medio 📩
+  const texto = `👩🏼‍💻 *SISTEMA DE PAGOS MONTANA:*
+ Horarios de Retiro : 
+🔺Días hábiles: De 12:00hs a 12:00hs 
+🔺Fines de semana: De 12:00hs a 02:00hs
 
-*Retiro mínimo $2.000*
-*Retiro máximo por día $50.000*
+ Límites de Retiro :
+🔺Mínimo de Retiro: $2.000
+🔺Máximo de Retiro por Día: $100.000
 
-⏰ *1 retiro cada 24HS*`;
+‼ *IMPORTANTE* ‼
+
+🔺 Usuario que retire desde $2.000 a $20.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
+
+🔺Para retiros superiores a $20.000, se permite solo un retiro cada 24 horas.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
