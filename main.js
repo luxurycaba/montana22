@@ -70,10 +70,25 @@ registrar.addEventListener("click", function (e) {
   let user = document.getElementById("usuario").value;
   console.log(user);
 
-  const texto = `👩‍💻 *Usuario:* ${user}
-🔐 *Clave:* vip123
- 
-Sitio web: https://citygame.casino 🎰`;
+  const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
+
+Plataforma: https://citygame.casino 🎰
+
+🎁 REGALO de bienvenida 100% de BONO 🎁
+
+👩‍💻 Usuario: ${user}
+🔐 Clave: vip123
+💰 CARGA MÍNIMA $1000 
+
+🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
+(de lo contrario puede perder su dinero) 
+
+Datos de nuestra cuenta:
+🔹 Nombre del Titular: *Ludmila Estefania Pascot*
+🔹 CBU: *0000076500000017190095*
+🔹 Alias: *lpascot.ppay*
+
+✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
