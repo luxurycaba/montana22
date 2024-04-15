@@ -84,9 +84,9 @@ Plataforma: https://citygame.casino 🎰
 (de lo contrario puede perder su dinero) 
 
 Datos de nuestra cuenta:
-🔹 Nombre del Titular: *Luciano Rene Zalazar*
-🔹 CBU: *0000076500000017239833*
-🔹 Alias: *lzalazar125.ppay*
+🔹 Nombre del Titular: *Lisandro Tobias Lobato*
+🔹 CBU: *0000076500000022384739*
+🔹 Alias: *llobato8.ppay*
 
 ✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
