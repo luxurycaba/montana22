@@ -17,7 +17,8 @@ body {
 }
 
 .pad-button,
-#pad-button-reg {
+#pad-button-reg,
+#pad-button-reg2 {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.762);
@@ -29,13 +30,15 @@ body {
 }
 
 .pad-button:hover,
-#pad-button-reg:hover {
+#pad-button-reg:hover,
+#pad-button-reg2:hover {
   background-color: rgba(255, 255, 255, 0.959);
   cursor: pointer;
 }
 
 .pad-button:active,
-#pad-button-reg:active {
+#pad-button-reg:active,
+#pad-button-reg2:active {
   background-color: rgba(0, 0, 0, 0.603);
   color: white;
 }
@@ -154,7 +157,8 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 10px;
 }
 
-.close {
+.close,
+.close2 {
   margin: 5px 10px 0 0;
   color: #aaa;
   font-size: 28px;
@@ -164,7 +168,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .close:hover,
-.close:focus {
+.close2:hover,
+.close:focus,
+.close2:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;

@@ -1,7 +1,7 @@
 let cbuxl = document.getElementById("cbuxl");
 let cbu = document.getElementById("cbu");
 let registrar = document.getElementById("modal-button");
-let bienvenida = document.getElementById("bienvenida");
+let bienvenida = document.getElementById("modal-button2");
 let pedirUsuario = document.getElementById("pedirUsuario");
 let retiro = document.getElementById("retiro");
 let retiroExitoso = document.getElementById("retiroExitoso");
@@ -18,13 +18,17 @@ let usuario = document.getElementById("usuario");
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("pad-button-reg");
 let span = document.getElementsByClassName("close")[0];
+let usuario2 = document.getElementById("usuario2");
+let modal2 = document.getElementById("myModal2");
+let btn2 = document.getElementById("pad-button-reg2");
+let span2 = document.getElementsByClassName("close2")[0];
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  let inputNombre = document.getElementById("name").value;
-  let inputCBU = document.getElementById("number").value;
-  let inputAlias = document.getElementById("alias").value;
+  globalThis.inputNombre = document.getElementById("name").value;
+  globalThis.inputCBU = document.getElementById("number").value;
+  globalThis.inputAlias = document.getElementById("alias").value;
 
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
@@ -84,9 +88,9 @@ Plataforma: https://citygame.casino 🎰
 (de lo contrario puede perder su dinero) 
 
 Datos de nuestra cuenta:
-🔹 Nombre del Titular: *Lisandro Tobias Lobato*
-🔹 CBU: *0000076500000022384739*
-🔹 Alias: *llobato8.ppay*
+🔹 Nombre del Titular: *${inputNombre}*
+🔹 CBU: *${inputCBU}*
+🔹 Alias: *${inputAlias}*
 
 ✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
@@ -102,14 +106,19 @@ Datos de nuestra cuenta:
   modal.style.display = "none";
 });
 
-bienvenida.addEventListener("click", () => {
+
+bienvenida.addEventListener("click", function (e) {
+  e.preventDefault();
+  let user = document.getElementById("usuario2").value;
+  console.log(user);
+
   const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
 
 Plataforma: https://citygame.casino 🎰
 
 🎁 REGALO de bienvenida 100% de BONO 🎁
 
-👩‍💻 Usuario: 
+👩‍💻 Usuario: ${user}
 🔐 Clave: vip123
 💰 CARGA MÍNIMA $1000 
 
@@ -117,9 +126,9 @@ Plataforma: https://citygame.casino 🎰
 (de lo contrario puede perder su dinero) 
 
 Datos de nuestra cuenta:
-🔹 Nombre del Titular: *Ludmila Estefania Pascot*
-🔹 CBU: *0000076500000017190095*
-🔹 Alias: *lpascot.ppay*
+🔹 Nombre del Titular: *${inputNombre}*
+🔹 CBU: *${inputCBU}*
+🔹 Alias: *${inputAlias}*
 
 ✅ Enviar debajo comprobante y usuario asignado`;
   const elementoTemporal = document.createElement("textarea");
@@ -129,6 +138,10 @@ Datos de nuestra cuenta:
   elementoTemporal.setSelectionRange(0, 9999);
   document.execCommand("copy");
   document.body.removeChild(elementoTemporal);
+
+  document.getElementById("usuario2").value = "";
+
+  modal2.style.display = "none";
 });
 
 pedirUsuario.addEventListener("click", () => {
@@ -293,5 +306,20 @@ span.onclick = function () {
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+};
+
+btn2.onclick = function () {
+  modal2.style.display = "block";
+  usuario2.focus();
+};
+
+span2.onclick = function () {
+  modal2.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
   }
 };
