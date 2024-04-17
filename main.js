@@ -1,16 +1,20 @@
 let cbuxl = document.getElementById("cbuxl");
 let cbu = document.getElementById("cbu");
-let registrar = document.getElementById("modal-button");
+let nombreApodo = document.getElementById("nombreApodo");
 let bienvenida = document.getElementById("modal-button2");
-let pedirUsuario = document.getElementById("pedirUsuario");
+let registrar = document.getElementById("modal-button");
+let fichasBonificacion = document.getElementById("fichasBonificacion");
+let fichasRecomendacion = document.getElementById("fichasRecomendacion");
+let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
+let textoRecomendacion = document.getElementById("textoRecomendacion");
+let recomendacion = document.getElementById("recomendacion");
 let retiro = document.getElementById("retiro");
 let retiroExitoso = document.getElementById("retiroExitoso");
 let premioEnviado = document.getElementById("premioEnviado");
-let contraseña = document.getElementById("contraseña");
-let referidos = document.getElementById("referidos");
+let solicitarUsuario = document.getElementById("solicitarUsuario");
+let demoraCargas = document.getElementById("demoraCargas");
 let noIngreso = document.getElementById("noIngreso");
 let soporte = document.getElementById("soporte");
-let cbuEquivocado = document.getElementById("cbuEquivocado");
 let sistemaDePagos = document.getElementById("sistemaDePagos");
 let form = document.getElementById("form");
 let form_button = document.getElementById("formButton");
@@ -33,13 +37,14 @@ form.addEventListener("submit", function (e) {
   if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
     cbuxl.addEventListener("click", () => {
       const texto = `Datos de nuestra cuenta:
-🔹 Nombre del Titular: *${inputNombre}*
-🔹 CBU: *${inputCBU}*
-🔹 Alias: *${inputAlias}*
 
-✅ Enviar debajo comprobante y usuario asignado
+🔺 Nombre del Titular: *${inputNombre}*
+🔺 CBU: *${inputCBU}*
+🔺 Alias: *${inputAlias}*
 
-INGRESÁ ACÁ PARA JUGAR: 
+✅ SI QUIERE QUE SEA MAS RÁPIDA LA CARGA ENVIENOS EL USUARIO ASIGNADO DEBAJO DEL COMPROBANTE
+
+INGRESÁ ACÁ PARA JUGAR:
 https://citygame.casino`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
@@ -69,30 +74,27 @@ https://citygame.casino`;
   }
 });
 
+nombreApodo.addEventListener("click", () => {
+  const texto = `Buenas! Que tal ✨ Para comenzar a jugar con nosotros solicito su nombre o usuario que le gustaria tener…`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
 registrar.addEventListener("click", function (e) {
   e.preventDefault();
   let user = document.getElementById("usuario").value;
-  console.log(user);
 
-  const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
+  const texto = `Registrad@: ✅ 
 
-Plataforma: https://citygame.casino 🎰
-
-🎁 REGALO de bienvenida 100% de BONO 🎁
-
-👩‍💻 Usuario: ${user}
-🔐 Clave: vip123
-💰 CARGA MÍNIMA $1000 
-
-🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
-(de lo contrario puede perder su dinero) 
-
-Datos de nuestra cuenta:
-🔹 Nombre del Titular: *${inputNombre}*
-🔹 CBU: *${inputCBU}*
-🔹 Alias: *${inputAlias}*
-
-✅ Enviar debajo comprobante y usuario asignado`;
+👩‍💻 *Usuario:* ${user}
+🔐 *Clave:* vip123
+ 
+Sitio web: https://citygame.casino 🎰`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -130,7 +132,7 @@ Datos de nuestra cuenta:
 🔹 CBU: *${inputCBU}*
 🔹 Alias: *${inputAlias}*
 
-✅ Enviar debajo comprobante y usuario asignado`;
+✅ *ENVIAR DEBAJO COMPROBANTE Y USUARIO ASIGNADO*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -144,9 +146,79 @@ Datos de nuestra cuenta:
   modal2.style.display = "none";
 });
 
-pedirUsuario.addEventListener("click", () => {
-  const texto = `Te pido tu *USUARIO* de la *PLATAFORMA* para poder automatizar la carga de fichas.
-*RECORDÁ enviarlo siempre por separado debajo del COMPROBANTE* 👇🏻👇🏻`;
+fichasBonificacion.addEventListener("click", () => {
+  const texto = `✅ *FICHAS CARGADAS* ✅
+
+🍀🍀 *MUCHISIMA SUERTE* 🍀🍀
+Podes comenzar a jugar‼️ 
+Sitio web: https://citygame.casino ⭐️
+
+Recordá que en todas las cargas que realices tenes *50% de BONIFICACIÓN* 🤑🎁`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+fichasRecomendacion.addEventListener("click", () => {
+  const texto = `🍀🤩 *FICHAS CARGADAS* 🤩🍀
+LE DESEAMOS MUCHA SUERTE!!
+
+¿QUERÉS OBTENER 1500 FICHAS GRATIS?  ⬇
+
+🔺 Pedinos nuestro texto de referidos para poder compartir con tus conocidos!!`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+sistemaRecomendacion.addEventListener("click", () => {
+  const texto = `👥 *SISTEMA DE REFERIDOS* 👥
+
+🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 1500 FICHAS* 🎁🤑
+
+*¿Como invitar a tus amigos?*
+
+🔺 Compartiendo el siguiente texto que te vamos a enviar debajo, completa los paréntesis así podemos verificar que haya venido de tu parte
+
+🙌🏻🙌🏻 *SUPER FACIL* 🙌🏻🙌🏻`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+textoRecomendacion.addEventListener("click", () => {
+  const texto = `(TU USUARIO) te REGALA un 100% de bonificación en tu primer carga 🎁🤑 , solo tenés que llenar los (Paréntesis) en el texto que se crea al ingresar al siguiente link:
+
+wa.link/referidosmontana`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+recomendacion.addEventListener("click", () => {
+  const texto = `🎁 *Sistema de Referidos* 🎁
+¡Recibimos una recomendación tuya! 🤩🙌🏼 
+
+¿Cómo canjear tus fichas?
+
+Simplemente escríbenos apartir de las 10 am a 12 am  para solicitar tus fichas correspondientes.
+A continuación, envíanos los números de tus amigos a quienes invitaste para que podamos verificar que hayan jugado.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -157,13 +229,23 @@ pedirUsuario.addEventListener("click", () => {
 });
 
 retiro.addEventListener("click", () => {
-  const texto = `Cómo retirar tu 💰? envieme: 
+  const texto = `*Cómo retirar tu 💰? envieme:*
 
-1-  Monto de su premio
-2- Su cbu o alias 
-3- Nombre completo del titular que recibe la transferencia 
+1- Monto de su premio
+2- Su cbu o alias
+3- Nombre completo del titular que recibe la transferencia
 
-🔔 Recordatorio: La bonificación *NO* es extraible‼️`;
+🔔 Recordatorio: *LA BONIFICACIÓN NO ES RETIRABLE* ‼️
+
+Como ver cuanto puedo retirar?
+
+PASO 1️⃣ : MENÚ
+PASO 2️⃣ : MI CUENTA
+PASO 3️⃣ : SALDO
+
+O desde la parte superior derecha donde esta la silueta de un usuario.
+
+Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la bonificación.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -174,10 +256,12 @@ retiro.addEventListener("click", () => {
 });
 
 retiroExitoso.addEventListener("click", () => {
-  const texto = `⚜ *PREMIO EN FILA*  ⚜
+  const texto = `✅ FICHAS RETIRADAS ✅ 
+
+🔺 Premio en fila  🙌🏻💸
 *Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 
 
-*POR FAVOR, NO RESPONDA NI REACCIONE ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO*.`;
+*POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -188,11 +272,14 @@ retiroExitoso.addEventListener("click", () => {
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `⚜ *TU PREMIO YA FUE ENVIADO* ⚜
-Felicitaciones! Disfrutalo mucho, *¡¡Gracias por elegirnos!!*
-  
-Si lo publicas en Instagram y *nos etiquetas, @montanacity22*, obtenes un 10% de bonificación en tu próxima carga! 
-*Muchas gracias* 😉`;
+  const texto = `✨🥂🎉*PREMIO ENVIADO*🎉🥂✨
+
+Felicitaciones‼️ Espero que lo disfrutes …
+
+Mucha gracias por confiar en MONTANA ♥️
+recordá que vamos a estar dando *50% de bonificación* en todas tus cargas próximas…
+
+Saludos: Valu ✨`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -202,9 +289,8 @@ Si lo publicas en Instagram y *nos etiquetas, @montanacity22*, obtenes un 10% de
   document.body.removeChild(elementoTemporal);
 });
 
-contraseña.addEventListener("click", () => {
-  const texto = `*CONTRASEÑA RESTABLECIDA*
-Por favor, recargá la página y si es posible, *copiá y pegá* los datos así se evitan errores de tipeo y, por lo tanto, no se bloquea el usuario. 🔓`;
+solicitarUsuario.addEventListener("click", () => {
+  const texto = `*Recordá porfavor 🙏🏼 ENVIAR DEBAJO DEL COMPROBANTE TU USUARIO ASIGNADO 🙏🏼 para agilizar la carga de fichas*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -214,15 +300,8 @@ Por favor, recargá la página y si es posible, *copiá y pegá* los datos así 
   document.body.removeChild(elementoTemporal);
 });
 
-referidos.addEventListener("click", () => {
-  const texto = `🤩🍀 *MUCHA SUERTE* 🍀🤩 
-
-📲 Agéndanos para poder acceder a nuestras promociones diarias 🎁
-
-🤑🎁 *NUEVA PROMOCIÓN* 🎁🤑
-‼ POR CADA REFERIDO que vengan de tu parte y comiencen a JUGAR con nosotros, se te *regalará* $1500 en fichas. ‼
-
-🙌🏻🙌🏻 *Super fácil* 🙌🏻🙌🏻`;
+demoraCargas.addEventListener("click", () => {
+  const texto = `Le comento que al estar en publicidad podemos tener un poco de *demora*, *SEA PACIENTE PORFAVOR* 🙏🏼vamos a responderle lo mas rápido posible. Contestamos por órden de llegada, si envía muchos mensajes luego del comprobante se posicióna *ÚLTIMO EN LA FILA!!!*`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -233,9 +312,11 @@ referidos.addEventListener("click", () => {
 });
 
 noIngreso.addEventListener("click", () => {
-  const texto = `🚫‼️Tu transferencia todavía no impactó ‼️🚫
-*Tené en cuenta que a veces las transferencias se demoran.*  Si el dinero no ingresa a nuestra cuenta bancaria, no tenemos autorizado cargar las fichas.
-🙌🏻 *Aguardá un momento y cuando ingrese tu trasnferencia tus fichas van a ser cargadas* 🙌🏻`;
+  const texto = `🚫 Tu transferencia todavía no impactó 🚫
+
+*Tené en cuenta que a veces las transferencias se demoran.*  🙏🏻
+
+*Por favor sea paciente, en cuanto impacte en nuestra cuenta, las fichas serán cargadas* 🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -246,21 +327,9 @@ noIngreso.addEventListener("click", () => {
 });
 
 soporte.addEventListener("click", () => {
-  const texto = `Por problemas e inconvenientes con la plataforma le solicitamos que *se comunique con el soporte de la página* ingresando al cuadro de diálogo que figura en la parte superior derecha de la misma, ya que nosotros *no podemos acceder a la configuración de las máquinas.* 🎰⚠️`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+  const texto = `Por problemas e inconvenientes con la plataforma le solicitamos que *se comuníque con el whatsapp de soporte*. 📲
 
-cbuEquivocado.addEventListener("click", () => {
-  const texto = `🚫Te informo que enviaste dinero a un CBU con el cual no estamos trabajando actualmente. En el mensaje de carga especificamos previamente que *SIEMPRE* se consulte segundos antes el CBU vigente antes de enviar dinero.🚫
-
-Por favor, aguardá con paciencia a que ingresemos a esa cuenta y verifiquemos que el dinero haya ingresado. *PUEDE DEMORAR UNAS HORAS*.‼️
-*HAY QUE SER RESPONSABLE CON TU DINERO DEBIDO A QUE SI SE ENVÍA DINERO A UNA CUENTA INACTIVA A LA QUE NO TENEMOS ACCESO, LO PIERDE*`;
+Puede encontrar el contacto en el menú de nuestra página, en la parte inferior del lado izquierdo donde figuran tres rayitas ☺️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -303,12 +372,6 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
 btn2.onclick = function () {
   modal2.style.display = "block";
   usuario2.focus();
@@ -319,7 +382,7 @@ span2.onclick = function () {
 };
 
 window.onclick = function (event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
+  if (event.target == modal || event.target == modal2) {
+    event.target.style.display = "none";
   }
 };
