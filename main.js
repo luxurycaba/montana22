@@ -120,12 +120,13 @@ Plataforma: https://citygame.casino 🎰
 
 🎁 REGALO de bienvenida 100% de BONO 🎁
 
-👩‍💻 Usuario: ${user}
-🔐 Clave: vip123
+👩‍💻 *Usuario* : ${user}
+🔐 *Clave* : vip123
 💰 CARGA MÍNIMA $1000 
 
 🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
-(de lo contrario puede perder su dinero) 
+
+(*SER PACIENTE ESTAMOS EN PUBLICIDAD, CONTESTAMOS POR ORDEN DE LLEGADA UNA VEZ QUE NOS ENVIA EL COMPROBANTE NO ENVIAR NADA SI NO PASARA A SER ULTIM@*) 
 
 Datos de nuestra cuenta:
 🔹 Nombre del Titular: *${inputNombre}*
@@ -147,13 +148,7 @@ Datos de nuestra cuenta:
 });
 
 fichasBonificacion.addEventListener("click", () => {
-  const texto = `✅ *FICHAS CARGADAS* ✅
-
-🍀🍀 *MUCHISIMA SUERTE* 🍀🍀
-Podes comenzar a jugar‼️ 
-Sitio web: https://citygame.casino ⭐️
-
-Recordá que en todas las cargas que realices tenes *50% de BONIFICACIÓN* 🤑🎁`;
+  const texto = `Agendanos para poder acceder a nuestras promociones diarias 📲💥`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -186,7 +181,7 @@ sistemaRecomendacion.addEventListener("click", () => {
 
 *¿Como invitar a tus amigos?*
 
-🔺 Compartiendo el siguiente texto que te vamos a enviar debajo, completa los paréntesis así podemos verificar que haya venido de tu parte
+🔺 Compartiendo el siguiente texto que te vamos a enviar debajo con quien vos quieras! Tiene el link que redirige a nuestro whatsapp
 
 🙌🏻🙌🏻 *SUPER FACIL* 🙌🏻🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
@@ -199,7 +194,7 @@ sistemaRecomendacion.addEventListener("click", () => {
 });
 
 textoRecomendacion.addEventListener("click", () => {
-  const texto = `(TU USUARIO) te REGALA un 100% de bonificación en tu primer carga 🎁🤑 , solo tenés que llenar los (Paréntesis) en el texto que se crea al ingresar al siguiente link:
+  const texto = `Montana te REGALA un 100% de bonificación en tu primer carga 🎁🤑 
 
 wa.link/referidosmontana`;
   const elementoTemporal = document.createElement("textarea");
