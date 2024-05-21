@@ -116,7 +116,7 @@ bienvenida.addEventListener("click", function (e) {
 
   const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
 
-Plataforma: https://citygame.casino 🎰
+Sitio web: https://montana22.com ⭐️ 
 
 🎁 REGALO de bienvenida 100% de BONO 🎁
 
@@ -125,8 +125,6 @@ Plataforma: https://citygame.casino 🎰
 💰 CARGA MÍNIMA $1000 
 
 🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
-
-(*SER PACIENTE ESTAMOS EN PUBLICIDAD, CONTESTAMOS POR ORDEN DE LLEGADA UNA VEZ QUE NOS ENVIA EL COMPROBANTE NO ENVIAR NADA SI NO PASARA A SER ULTIM@*) 
 
 Datos de nuestra cuenta:
 🔹 Nombre del Titular: *${inputNombre}*
@@ -148,7 +146,9 @@ Datos de nuestra cuenta:
 });
 
 fichasBonificacion.addEventListener("click", () => {
-  const texto = `Agendanos para poder acceder a nuestras promociones diarias 📲💥`;
+  const texto = `📲 Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas ‼️💥
+
+Plataforma: https://montana22.com ⭐`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -159,12 +159,11 @@ fichasBonificacion.addEventListener("click", () => {
 });
 
 fichasRecomendacion.addEventListener("click", () => {
-  const texto = `🍀🤩 *FICHAS CARGADAS* 🤩🍀
-LE DESEAMOS MUCHA SUERTE!!
+  const texto = `🤑🎁 *NUEVA PROMOCIÓN* 🎁🤑
 
-¿QUERÉS OBTENER 1500 FICHAS GRATIS?  ⬇
+‼️ POR CADA REFERIDO que vengan de tu parte y comiencen a JUGAR con nosotros, se te regalará *3000 en fichas* ‼️
 
-🔺 Pedinos nuestro texto de referidos para poder compartir con tus conocidos!!`;
+🙌🏻🙌🏻 Super fácil 🙌🏻🙌🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
