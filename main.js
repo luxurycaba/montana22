@@ -159,11 +159,14 @@ Plataforma: https://montana22.com ⭐`;
 });
 
 fichasRecomendacion.addEventListener("click", () => {
-  const texto = `🤑🎁 *NUEVA PROMOCIÓN* 🎁🤑
+  const texto = `Acreditadas! ✅ MUCHOS EXITOS🤞🏼
+sitio web: https://montana22.com ✨
 
-‼️ POR CADA REFERIDO que vengan de tu parte y comiencen a JUGAR con nosotros, se te regalará *3000 en fichas* ‼️
+Recordá que en todas tus *CARGAS DIARIAS* tenes *50% DE BONO* 🔥 
 
-🙌🏻🙌🏻 Super fácil 🙌🏻🙌🏻`;
+⬇️ ‼️*IMPORTANTE* ‼️⬇️
+
+Agéndanos para poder acceder a nuestras promociones diarias 📲🎁`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
