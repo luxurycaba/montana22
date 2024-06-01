@@ -89,9 +89,9 @@ registrar.addEventListener("click", function (e) {
   e.preventDefault();
   let user = document.getElementById("usuario").value;
 
-  const texto = `Registrad@: ✅ 
+  const texto = `Registrad@:✅ 
 
-👩‍💻 *Usuario:* 
+👩‍💻 *Usuario:* ${user}
 🔐 *Clave:* vip123
  
 Sitio web: https://montana22.com`;
