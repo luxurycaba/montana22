@@ -91,10 +91,10 @@ registrar.addEventListener("click", function (e) {
 
   const texto = `Registrad@: ✅ 
 
-👩‍💻 *Usuario:* ${user}
+👩‍💻 *Usuario:* 
 🔐 *Clave:* vip123
  
-Sitio web: https://citygame.casino 🎰`;
+Sitio web: https://montana22.com`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
