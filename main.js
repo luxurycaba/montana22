@@ -116,22 +116,24 @@ bienvenida.addEventListener("click", function (e) {
 
   const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
 
-Sitio web: https://montana22.com ⭐️ 
+Sitio web: https://citygame.casino ⭐ 
 
-🎁 REGALO de bienvenida 100% de BONO 🎁
+🎁 *REGALO de bienvenida 100% de BONO* 🎁
 
 👩‍💻 *Usuario* : ${user}
 🔐 *Clave* : vip123
-💰 CARGA MÍNIMA $1000 
 
 🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
+
+💰 *CARGA MÍNIMA $1.000*
+💰 *RETIRO MINIMO $2.000*
 
 Datos de nuestra cuenta:
 🔹 Nombre del Titular: *${inputNombre}*
 🔹 CBU: *${inputCBU}*
 🔹 Alias: *${inputAlias}*
 
-✅ *ENVIAR DEBAJO COMPROBANTE Y USUARIO ASIGNADO*`;
+✅ ENVIAR DEBAJO COMPROBANTE Y USUARIO`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -146,9 +148,9 @@ Datos de nuestra cuenta:
 });
 
 fichasBonificacion.addEventListener("click", () => {
-  const texto = `📲 Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas ‼️💥
+  const texto = `📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼️💥
 
-Plataforma: https://montana22.com ⭐`;
+Plataforma: https://citygame.casino`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -159,14 +161,13 @@ Plataforma: https://montana22.com ⭐`;
 });
 
 fichasRecomendacion.addEventListener("click", () => {
-  const texto = `Acreditadas! ✅ MUCHOS EXITOS🤞🏼
-sitio web: https://montana22.com ✨
+  const texto = `🎉 *PODES COMENZAR A JUGAR* 🎉
 
-Recordá que en todas tus *CARGAS DIARIAS* tenes *50% DE BONO* 🔥 
+Muchisima suerte 🍀🤞🏼✨
 
-⬇️ ‼️*IMPORTANTE* ‼️⬇️
+En todas tus cargas diarias MONTANA te regala 50% de bono ♥️🎁
 
-Agéndanos para poder acceder a nuestras promociones diarias 📲🎁`;
+Sitio web: https://citygame.casino`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
