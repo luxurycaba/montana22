@@ -89,12 +89,17 @@ registrar.addEventListener("click", function (e) {
   e.preventDefault();
   let user = document.getElementById("usuario").value;
 
-  const texto = `Registrad@:✅ 
+  const texto = `USUARIO REGISTRAD@ ✅ 
 
 👩‍💻 *Usuario:* ${user}
 🔐 *Clave:* vip123
  
-Sitio web: https://montana22.com`;
+Sitio web: https://citygame.casino
+
+🍀🤞🏼 MUCHOS EXITOS 🤞🏼🍀
+
+📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼💥
+`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -210,13 +215,25 @@ wa.link/referidosmontana`;
 });
 
 recomendacion.addEventListener("click", () => {
-  const texto = `🎁 *Sistema de Referidos* 🎁
-¡Recibimos una recomendación tuya! 🤩🙌🏼 
+  const texto = `INFORMACIÓN COMPLETA DE MONTANA:
 
-¿Cómo canjear tus fichas?
+‼ *LEER ATENTAMENTE* ‼
 
-Simplemente escríbenos apartir de las 10 am a 12 am  para solicitar tus fichas correspondientes.
-A continuación, envíanos los números de tus amigos a quienes invitaste para que podamos verificar que hayan jugado.`;
+👩🏼‍💻  *SISTEMA DE BONIFICACIÓNES:*
+
+🔺La bonificación NO es retirable, pero te hace ganar fichas que SI lo son.
+
+🔺Casino en vivo NO juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
+
+🔺Hay algunos SLOTS que NO permiten el bono, otros que si. De igual forma, los que no permiten te avisan con un cartel.
+
+👩🏼‍💻 *SISTEMA DE RETIROS:*
+
+🔺Si jugaste a un juego que no permitía el bono, y ganaste, pero te quedo toda la bonificación. Una vez que pedis retirar, el mismo sistema de la pagina también baja el bono. Es decir ….  ( NO PODES SEGUIR JUGANDO CON ESAS FICHAS )
+
+🔺Podes verificar tu saldo retirable desde el menú de tu usuario:
+
+*WAGER* es lo que te queda de bono. *BALANCE PUEDE RETIRAR* es tu saldo cobrable.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
