@@ -89,16 +89,22 @@ registrar.addEventListener("click", function (e) {
   e.preventDefault();
   let user = document.getElementById("usuario").value;
 
-  const texto = `USUARIO REGISTRAD@ ✅ 
+  const texto = `✅ USUARIO REGISTRAD@ ✅ 
 
 👩‍💻 *Usuario:* ${user}
 🔐 *Clave:* vip123
  
 Sitio web: https://citygame.casino
 
+‼️♦️FICHAS ACREDITADAS♦️‼️
+
 🍀🤞🏼 MUCHOS EXITOS 🤞🏼🍀
 
+Te vamos a estar *regalando* en todas tus cargas diarias *50% de bono* 👏🏼🎁
+
 📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼💥
+
+Para más información sobre los retiros, solicita nuestro *CRONOGRAMA DE PAGOS* 👩🏼‍💻
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
@@ -168,7 +174,7 @@ Plataforma: https://citygame.casino`;
 fichasRecomendacion.addEventListener("click", () => {
   const texto = `🎉 *PODES COMENZAR A JUGAR* 🎉
 
-Muchisima suerte 🍀🤞🏼✨
+🤞🏼🍀 MUCHISIMA SUERTE 🍀🤞🏼
 
 En todas tus cargas diarias MONTANA te regala 50% de bono ♥️🎁
 
@@ -289,10 +295,11 @@ retiroExitoso.addEventListener("click", () => {
 premioEnviado.addEventListener("click", () => {
   const texto = `✨🥂🎉*PREMIO ENVIADO*🎉🥂✨
 
-Felicitaciones‼️ Espero que lo disfrutes …
+Felicitaciones‼️ Espero que lo disfrutes mucho 👏🏼🫶🏽
 
 Mucha gracias por confiar en MONTANA ♥️
-recordá que vamos a estar dando *50% de bonificación* en todas tus cargas próximas…
+
+➡️ *Por cada referido que venga de tu parte, te regalamos 1500 🎁 fichas* ⬅️
 
 Saludos: Valu ✨`;
   const elementoTemporal = document.createElement("textarea");
