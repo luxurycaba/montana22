@@ -159,9 +159,21 @@ Datos de nuestra cuenta:
 });
 
 fichasBonificacion.addEventListener("click", () => {
-  const texto = `📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼️💥
+  const texto = `Bienvenida/o a el numero…
+⭐ *ORIGINAL DE MONTANA* ⭐
 
-Plataforma: https://citygame.casino`;
+Sitio web: https://citygame.casino 
+
+Para más información sobre el manejo de bonificaciones y retiros, solicita nuestro *CRONOGRAMA* 👩🏼‍💻
+
+🃏♦FICHAS ACREDITADAS♦🃏
+
+Que tengas *MUCHOS EXITOS* 🤞🏼🍀
+
+Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
+
+📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼💥
+`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
