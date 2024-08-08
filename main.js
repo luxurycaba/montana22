@@ -75,7 +75,11 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Buenas! Que tal ✨ Para comenzar a jugar con nosotros solicito su nombre o usuario que le gustaria tener…`;
+  const texto = `Hola ! Que tal 🙋🏼‍♀🎰
+
+Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis !
+
+🎁 *En tu primer carga te regalamos 100% DE BONUS es decir, duplicamos tu carga* 🎁`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -125,21 +129,24 @@ bienvenida.addEventListener("click", function (e) {
   let user = document.getElementById("usuario2").value;
   console.log(user);
 
-  const texto = `Bienvenido/a … Mi nombre es Valu y voy ser tu MEJOR CAJERA de confianza! 👩🏼‍💻🎉
+  const texto = `Bienvenida/o a ….. 🥁
+
+🃏♦ *MONTANA* ♦🃏
 
 Sitio web: https://citygame.casino ⭐ 
 
 🎁 *REGALO de bienvenida 100% de BONO* 🎁
 
-👩‍💻 *Usuario* : ${user}
-🔐 *Clave* : vip123
+👩‍💻 *Usuario:* ${user}
+🔐 *Clave:* vip123
 
 🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
 
 💰 *CARGA MÍNIMA $1.000*
-💰 *RETIRO MINIMO $2.000*
+💰 *RETIRO MÍNIMO $2.000*
 
-Datos de nuestra cuenta:
+*Te dejo los datos de mi cuenta para transferir el saldo que quiera tener en juego* 👇🏼
+
 🔹 Nombre del Titular: *${inputNombre}*
 🔹 CBU: *${inputCBU}*
 🔹 Alias: *${inputAlias}*
