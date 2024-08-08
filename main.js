@@ -6,6 +6,7 @@ let registrar = document.getElementById("modal-button");
 let fichasBonificacion = document.getElementById("fichasBonificacion");
 let fichasRecomendacion = document.getElementById("fichasRecomendacion");
 let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
+let derivar = document.getElementById("derivar");
 let textoRecomendacion = document.getElementById("textoRecomendacion");
 let recomendacion = document.getElementById("recomendacion");
 let retiro = document.getElementById("retiro");
@@ -75,9 +76,7 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Hola ! Que tal 🙋🏼‍♀🎰
-
-Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis !
+  const texto = `Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis !
 
 🎁 *En tu primer carga te regalamos 100% DE BONUS es decir, duplicamos tu carga* 🎁`;
   const elementoTemporal = document.createElement("textarea");
@@ -217,6 +216,24 @@ sistemaRecomendacion.addEventListener("click", () => {
 🔺 Compartiendo el siguiente texto que te vamos a enviar debajo con quien vos quieras! Tiene el link que redirige a nuestro whatsapp
 
 🙌🏻🙌🏻 *SUPER FACIL* 🙌🏻🙌🏻`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
+derivar.addEventListener("click", () => {
+  const texto = `Buenísimo !! Una pasito más 🙏🏼
+
+*Para la acreditación de su saldo + la bonificación escribanos a nuestro WHATSAPP PRINCIPAL que le vamos a estar enviando debajo… Por favor envíenos:*
+
+🔺 Su usuario asignado 
+🔺 El comprobante de su transferencia 
+
+‪+54 9 3329 38‑9624 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
