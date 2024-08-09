@@ -233,7 +233,7 @@ derivar.addEventListener("click", () => {
 🔺 Su usuario asignado 
 🔺 El comprobante de su transferencia 
 
-‪+54 9 3329 38‑9624 `;
+‪+54 9 3329 38‑9624`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -257,25 +257,15 @@ wa.link/referidosmontana`;
 });
 
 recomendacion.addEventListener("click", () => {
-  const texto = `INFORMACIÓN COMPLETA DE MONTANA:
-
-‼ *LEER ATENTAMENTE* ‼
+  const texto = `‼ *LEER ATENTAMENTE* ‼
 
 👩🏼‍💻  *SISTEMA DE BONIFICACIÓNES:*
 
-🔺La bonificación NO es retirable, pero te hace ganar fichas que SI lo son.
+🔺 La bonificación *NO* es retirable, pero te hace ganar fichas que SI lo son.
 
-🔺Casino en vivo NO juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
+🔺 Casino en vivo *NO* juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
 
-🔺Hay algunos SLOTS que NO permiten el bono, otros que si. De igual forma, los que no permiten te avisan con un cartel.
-
-👩🏼‍💻 *SISTEMA DE RETIROS:*
-
-🔺Si jugaste a un juego que no permitía el bono, y ganaste, pero te quedo toda la bonificación. Una vez que pedis retirar, el mismo sistema de la pagina también baja el bono. Es decir ….  ( NO PODES SEGUIR JUGANDO CON ESAS FICHAS )
-
-🔺Podes verificar tu saldo retirable desde el menú de tu usuario:
-
-*WAGER* es lo que te queda de bono. *BALANCE PUEDE RETIRAR* es tu saldo cobrable.`;
+🔺 Hay algunos SLOTS que *NO* permiten el bono, otros que si. De igual forma, los que no permiten te avisan con un cartel, algunos no avisan pero te vas a dar cuenta porque no te figura el saldo TOTAL.`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
