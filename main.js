@@ -76,9 +76,7 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis !
-
-🎁 *En tu primer carga te regalamos 100% DE BONUS es decir, duplicamos tu carga* 🎁`;
+  const texto = `Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis asi comenzas a *JUGAR Y GANAR* 🍀🥰`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -134,7 +132,7 @@ bienvenida.addEventListener("click", function (e) {
 
 Sitio web: https://citygame.casino ⭐ 
 
-🎁 *REGALO de bienvenida 100% de BONO* 🎁
+🎁 *REGALO de bienvenida 150% de BONO* 🎁
 
 👩‍💻 *Usuario:* ${user}
 🔐 *Clave:* vip123
