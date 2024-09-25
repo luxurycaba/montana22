@@ -3,11 +3,12 @@ let cbu = document.getElementById("cbu");
 let nombreApodo = document.getElementById("nombreApodo");
 let bienvenida = document.getElementById("modal-button2");
 let registrar = document.getElementById("modal-button");
-let fichasBonificacion = document.getElementById("fichasBonificacion");
-let fichasRecomendacion = document.getElementById("fichasRecomendacion");
+let bienvenidaPubli = document.getElementById("bienvenidaPubli");
+let acreditadas = document.getElementById("acreditadas");
 let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
 let derivar = document.getElementById("derivar");
 let textoRecomendacion = document.getElementById("textoRecomendacion");
+let captura = document.getElementById("captura");
 let recomendacion = document.getElementById("recomendacion");
 let retiro = document.getElementById("retiro");
 let retiroExitoso = document.getElementById("retiroExitoso");
@@ -97,13 +98,11 @@ registrar.addEventListener("click", function (e) {
  
 Sitio web: https://citygame.casino
 
-‼️♦️FICHAS ACREDITADAS♦️‼️
+🌸🌷 *SALDO ACREDITADO* 🌷🌸
 
 🍀🤞🏼 MUCHOS EXITOS 🤞🏼🍀
 
-Te vamos a estar *regalando* en todas tus cargas diarias *50% de bono* 👏🏼🎁
-
-📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼💥
+Te vamos a estar *REGALANDO* en todas tus cargas diarias *50% de BONUS* 🎁 
 
 Para más información sobre los retiros, solicita nuestro *CRONOGRAMA DE PAGOS* 👩🏼‍💻
 `;
@@ -126,16 +125,14 @@ bienvenida.addEventListener("click", function (e) {
   let user = document.getElementById("usuario2").value;
   console.log(user);
 
-  const texto = `Bienvenida/o a ….. 🥁
+  const texto = `Bienvenida/o a … ⭐️ *MONTANA* ⭐️
 
-🃏♦ *MONTANA* ♦🃏
+Sitio web: https://citygame.casino 🎰
 
-Sitio web: https://citygame.casino ⭐ 
+🎁 *REGALO de bienvenida 100% de BONO* 🎁 (Para obtener la bonificación agendame como *VALU CAJERA* o *MONTANA* y envianos captura) 🙏🏻
 
-🎁 *REGALO de bienvenida 150% de BONO* 🎁
-
-👩‍💻 *Usuario:* ${user}
-🔐 *Clave:* vip123
+👩‍💻 *USUARIO:* ${user}
+🔐 *CLAVE:* vip123
 
 🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
 
@@ -148,7 +145,7 @@ Sitio web: https://citygame.casino ⭐
 🔹 CBU: *${inputCBU}*
 🔹 Alias: *${inputAlias}*
 
-✅ ENVIAR DEBAJO COMPROBANTE Y USUARIO`;
+✅ ENVIAR DEBAJO COMPROBANTE Y USUARIO ⬇️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -162,21 +159,23 @@ Sitio web: https://citygame.casino ⭐
   modal2.style.display = "none";
 });
 
-fichasBonificacion.addEventListener("click", () => {
+bienvenidaPubli.addEventListener("click", () => {
   const texto = `Bienvenida/o a el numero…
 ⭐ *ORIGINAL DE MONTANA* ⭐
 
 Sitio web: https://citygame.casino 
 
-Para más información sobre el manejo de bonificaciones y retiros, solicita nuestro *CRONOGRAMA* 👩🏼‍💻
+* Para más información sobre el manejo de bonificaciones y retiros, solicita nuestro *CRONOGRAMA* 👩🏼‍💻
 
-🃏♦FICHAS ACREDITADAS♦🃏
+🌷🌸 *SALDO ACREDITADO* 🌸🌷
 
 Que tengas *MUCHOS EXITOS* 🤞🏼🍀
 
-Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
+* Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
 
-📲 *Agéndanos para poder acceder a nuestros estados donde subimos: bonificación, sorteos, premios y mucho mas* ‼💥
+🎁⬇️ *NUEVA PROMOCIÓN* ⬇️🎁
+
+* Por *CADA* referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
@@ -187,12 +186,14 @@ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼�
   document.body.removeChild(elementoTemporal);
 });
 
-fichasRecomendacion.addEventListener("click", () => {
-  const texto = `🎉 *PODES COMENZAR A JUGAR* 🎉
+acreditadas.addEventListener("click", () => {
+  const texto = `🌷🌸 *SALDO ACREDITADO* 🌸🌷
 
-🤞🏼🍀 MUCHISIMA SUERTE 🍀🤞🏼
+Muchísima suerte🍀🤞🏼
 
-En todas tus cargas diarias MONTANA te regala 50% de bono ♥️🎁
+🎁 ⬇️ *NUEVA PROMOCIÓN* ⬇️ 🎁
+
+Por CADA referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
 
 Sitio web: https://citygame.casino`;
   const elementoTemporal = document.createElement("textarea");
@@ -254,6 +255,19 @@ wa.link/referidosmontana`;
   document.body.removeChild(elementoTemporal);
 });
 
+captura.addEventListener("click", () => {
+  const texto = `🎁🤝 *REGALO de bienvenida 100% de BONO* 🤝🎁 
+
+(Para obtener la bonificación agendame como *VALU CAJERA* o *MONTANA* y envianos captura) 🙏🏻`;
+  const elementoTemporal = document.createElement("textarea");
+  elementoTemporal.value = texto;
+  document.body.appendChild(elementoTemporal);
+  elementoTemporal.select();
+  elementoTemporal.setSelectionRange(0, 9999);
+  document.execCommand("copy");
+  document.body.removeChild(elementoTemporal);
+});
+
 recomendacion.addEventListener("click", () => {
   const texto = `‼ *LEER ATENTAMENTE* ‼
 
@@ -301,12 +315,15 @@ Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la
 });
 
 retiroExitoso.addEventListener("click", () => {
-  const texto = `✅ FICHAS RETIRADAS ✅ 
+  const texto = `✅ *SALDO RETIRADO* ✅ 
 
 🔺 Premio en fila  🙌🏻💸
-*Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 
 
-*POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR*`;
+*Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 🫡
+
+*POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 🙏🏻
+
+*CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -317,15 +334,15 @@ retiroExitoso.addEventListener("click", () => {
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `✨🥂🎉*PREMIO ENVIADO*🎉🥂✨
+  const texto = `🌷🥂 *PREMIO ENVIADO*🥂🌷
 
 Felicitaciones‼️ Espero que lo disfrutes mucho 👏🏼🫶🏽
 
-Mucha gracias por confiar en MONTANA ♥️
+Mucha gracias por confiar en MONTANA 🤝😊
 
-➡️ *Por cada referido que venga de tu parte, te regalamos 1500 🎁 fichas* ⬅️
+Nuestro instagram: @montanacity22 
 
-Saludos: Valu ✨`;
+Saludos: Valu 🩷`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -386,16 +403,17 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 });
 
 sistemaDePagos.addEventListener("click", () => {
-  const texto = `👩🏼‍💻 SISTEMA DE PAGOS MONTANA:
- Horarios de Retiro : 
-🔺Días hábiles: De 12:00hs a 00:00hs 
-🔺Fines de semana: De 12:00hs a 02:00hs
+  const texto = `⏰ *HORARIOS DE RETIROS* : 
 
- Límites de Retiro :
-🔺Mínimo de Retiro: $2.000
-🔺Máximo de Retiro por Día: $100.000
+🔺Días hábiles: De 13:00hs a 00:00hs 
+🔺Fines de semana: De 13:00hs a 02:00hs
 
-‼ IMPORTANTE ‼
+🚫 *LIMITES DE RETIROS*:
+
+🔺Mínimo de retiro: $2.000
+🔺Máximo de retiro por día: $100.000
+
+⬇️‼ *IMPORTANTE* ‼️⬇️
 
 🔺 Usuario que retire desde $2.000 a $20.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
 
