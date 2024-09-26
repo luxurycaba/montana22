@@ -77,7 +77,7 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Mi nombre es Valu, déjame un *NOMBRE* o *APODO* para generarte el usuario gratis asi comenzas a *JUGAR Y GANAR* 🍀🥰`;
+  const texto = `Déjame un *NOMBRE* o *APODO* para generarte el usuario gratis asi comenzas a *JUGAR* ☺️🍀`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -258,9 +258,9 @@ wa.link/referidosmontana`;
 });
 
 captura.addEventListener("click", () => {
-  const texto = `🎁🤝 *REGALO de bienvenida 100% de BONO* 🤝🎁 
+  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp que siempre estoy subiendo bonus para mis clientes ☺️
 
-(Para obtener la bonificación agendame como *VALU CAJERA* o *MONTANA* y envianos captura) 🙏🏻`;
+*Para el bonus extra del 100% porfavor enviame captura de como me agendaste* ❤️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
