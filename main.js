@@ -125,21 +125,23 @@ bienvenida.addEventListener("click", function (e) {
   let user = document.getElementById("usuario2").value;
   console.log(user);
 
-  const texto = `Bienvenida/o a … ⭐️ *MONTANA* ⭐️
+  const texto = `Bienvenida/o a … *MONTANA* ⭐️
 
-Sitio web: https://citygame.casino 🎰
+Web : https://citygame.casino 🎰
 
-🎁 *REGALO de bienvenida 100% de BONO* 🎁 (Para obtener la bonificación agendame como *VALU CAJERA* o *MONTANA* y envianos captura) 🙏🏻
+*Regalo de bienvenida 100% de bonus* 🎁 ❤️
 
-👩‍💻 *USUARIO:* ${user}
-🔐 *CLAVE:* vip123
+👩‍💻 *Usuario:* ${user}
+🔐 *Clave:* vip123
 
-🚨 RECORDÁ CONSULTAR CVU ACTIVO SIEMPRE ANTES DE TRANSFERIR 🚨
+🚨 Consulta *SIEMPRE* cbu activo🚨
 
 💰 *CARGA MÍNIMA $1.000*
 💰 *RETIRO MÍNIMO $2.000*
 
-*Te dejo los datos de mi cuenta para transferir el saldo que quiera tener en juego* 👇🏼
+(Para mas info, solicita cronograma de pagos) 🏦
+
+*Te dejo los datos de mi cuenta para transferir* 👇🏼
 
 🔹 Nombre del Titular: *${inputNombre}*
 🔹 CBU: *${inputCBU}*
