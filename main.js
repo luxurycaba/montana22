@@ -125,19 +125,15 @@ bienvenida.addEventListener("click", function (e) {
   let user = document.getElementById("usuario2").value;
   console.log(user);
 
-  const texto = `Bienvenida/o a … *MONTANA* ⭐️
+  const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  https://citygame.casino 
 
-Web : https://citygame.casino 🎰
+♦️ *Usuario:* ${user}
+
+♦️ *Clave:* vip123
 
 *Regalo de bienvenida 100% de bonus* 🎁 ❤️
 
-👩‍💻 *Usuario:* ${user}
-🔐 *Clave:* vip123
-
-🚨 Consulta *SIEMPRE* cbu activo🚨
-
 💰 *CARGA MÍNIMA $1.000*
-💰 *RETIRO MÍNIMO $2.000*
 
 (Para mas info, solicita cronograma de pagos) 🏦
 
@@ -147,7 +143,9 @@ Web : https://citygame.casino 🎰
 🔹 CBU: *${inputCBU}*
 🔹 Alias: *${inputAlias}*
 
-✅ ENVIAR DEBAJO COMPROBANTE Y USUARIO ⬇️`;
+🚨 Consulta *SIEMPRE* cbu activo🚨
+
+Enviar debajo usuario y comprobante ⬇️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -163,21 +161,13 @@ Web : https://citygame.casino 🎰
 
 bienvenidaPubli.addEventListener("click", () => {
   const texto = `Bienvenida/o a el numero…
-⭐ *ORIGINAL DE MONTANA* ⭐
+🎲 *PRINCIPAL DE MONTANA* 🎲
 
-Sitio web: https://citygame.casino 
+Fichas cargadas, *MUCHOS EXITOS* 🤞🏼🍀
 
-* Para más información sobre el manejo de bonificaciones y retiros, solicita nuestro *CRONOGRAMA* 👩🏼‍💻
+Ya podes ingresar a nuestra web: https://citygame.casino 🎰
 
-🌷🌸 *SALDO ACREDITADO* 🌸🌷
-
-Que tengas *MUCHOS EXITOS* 🤞🏼🍀
-
-* Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
-
-🎁⬇️ *NUEVA PROMOCIÓN* ⬇️🎁
-
-* Por *CADA* referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
+♦️ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
@@ -189,13 +179,11 @@ Que tengas *MUCHOS EXITOS* 🤞🏼🍀
 });
 
 acreditadas.addEventListener("click", () => {
-  const texto = `🌷🌸 *SALDO ACREDITADO* 🌸🌷
+  const texto = `Fichas cargadas! Muchísima suerte🍀
 
-Muchísima suerte🍀🤞🏼
+🎁 🔥 *NUEVA PROMO* 🔥 🎁
 
-🎁 ⬇️ *NUEVA PROMOCIÓN* ⬇️ 🎁
-
-Por CADA referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
+Por cada referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
 
 Sitio web: https://citygame.casino`;
   const elementoTemporal = document.createElement("textarea");
