@@ -77,9 +77,7 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺️
-
-*Para el bonus extra del 100% porfavor enviame captura de como me agendaste* ❤️`;
+  const texto = `Déjame un NOMBRE o APODO para generarte el usuario gratis asi comenzas a JUGAR ☺`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -193,7 +191,7 @@ Sitio web: https://citygame.casino`;
 sistemaRecomendacion.addEventListener("click", () => {
   const texto = `👥 *SISTEMA DE REFERIDOS* 👥
 
-🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 1500 FICHAS* 🎁🤑
+🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 3.000 FICHAS* 🎁🤑
 
 *¿Como invitar a tus amigos?*
 
@@ -241,7 +239,7 @@ wa.link/referidosmontana`;
 });
 
 captura.addEventListener("click", () => {
-  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp que siempre estoy subiendo bonus para mis clientes ☺️
+  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
 
 *Para el bonus extra del 100% porfavor enviame captura de como me agendaste* ❤️`;
   const elementoTemporal = document.createElement("textarea");
