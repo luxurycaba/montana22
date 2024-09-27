@@ -77,7 +77,9 @@ https://citygame.casino`;
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Déjame un *NOMBRE* o *APODO* para generarte el usuario gratis asi comenzas a *JUGAR* ☺️🍀`;
+  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺️
+
+*Para el bonus extra del 100% porfavor enviame captura de como me agendaste* ❤️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -208,12 +210,12 @@ sistemaRecomendacion.addEventListener("click", () => {
 });
 
 derivar.addEventListener("click", () => {
-  const texto = `Buenísimo !! Una pasito más 🙏🏼
+  const texto = `Buenísimo!! Una pasito más 🙏🏼
 
-*Para la acreditación de su saldo + la bonificación escribanos a nuestro WHATSAPP PRINCIPAL que le vamos a estar enviando debajo… Por favor envíenos:*
+*Para la carga de su saldo + el bonus escribime a mi WHATSAPP PRINCIPAL que le vamos a estar enviando debajo… Por favor envíenos:*
 
-🔺 Su usuario asignado 
-🔺 El comprobante de su transferencia 
+♦️Su usuario asignado 
+♦️El comprobante de su transferencia 
 
 ‪+54 9 3329 38‑9624`;
   const elementoTemporal = document.createElement("textarea");
@@ -384,21 +386,21 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 });
 
 sistemaDePagos.addEventListener("click", () => {
-  const texto = `⏰ *HORARIOS DE RETIROS* : 
+  const texto = `*Horarios de retiros* : 
 
-🔺Días hábiles: De 13:00hs a 00:00hs 
-🔺Fines de semana: De 13:00hs a 02:00hs
+♦️ Días hábiles: De 13:00hs a 00:00hs 
+♦️ Fines de semana: De 13:00hs a 02:00hs
 
-🚫 *LIMITES DE RETIROS*:
+*Limite de retiros*:
 
-🔺Mínimo de retiro: $2.000
-🔺Máximo de retiro por día: $100.000
+♦️Mínimo de retiro: $2.000
+♦️Máximo de retiro por día: $100.000
 
-⬇️‼ *IMPORTANTE* ‼️⬇️
+ *Importante* ‼⬇
 
-🔺 Usuario que retire desde $2.000 a $20.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
+♦️ Usuario que retire desde $2.000 a $20.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
 
-🔺Para retiros superiores a $20.000, se permite solo un retiro cada 24 horas.
+♦️ Para retiros superiores a $20.000, se permite solo un retiro cada 24 horas.
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
