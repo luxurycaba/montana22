@@ -93,18 +93,11 @@ registrar.addEventListener("click", function (e) {
 
   const texto = `✅ USUARIO REGISTRAD@ ✅ 
 
-👩‍💻 *Usuario:* ${user}
-🔐 *Clave:* vip123
- 
-Sitio web: https://citygame.casino
+♦️ *Usuario:* ${user}
 
-🌸🌷 *SALDO ACREDITADO* 🌷🌸
+♦️ *Clave:* vip123
 
-🍀🤞🏼 MUCHOS EXITOS 🤞🏼🍀
-
-Te vamos a estar *REGALANDO* en todas tus cargas diarias *50% de BONUS* 🎁 
-
-Para más información sobre los retiros, solicita nuestro *CRONOGRAMA DE PAGOS* 👩🏼‍💻
+Sitio web: https://citygame.casino 🎰
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
@@ -324,15 +317,13 @@ retiroExitoso.addEventListener("click", () => {
 });
 
 premioEnviado.addEventListener("click", () => {
-  const texto = `🌷🥂 *PREMIO ENVIADO*🥂🌷
+  const texto = `🥳 *PREMIO ENVIADO*🥳
 
-Felicitaciones‼️ Espero que lo disfrutes mucho 👏🏼🫶🏽
+Felicitaciones! Espero que lo disfrutes mucho 🫶🏽
 
-Mucha gracias por confiar en MONTANA 🤝😊
+Mucha gracias por confiar en Montana 🫂
 
-Nuestro instagram: @montanacity22 
-
-Saludos: Valu 🩷`;
+Saludos: Valu ❤`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
