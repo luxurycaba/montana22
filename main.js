@@ -35,19 +35,11 @@ form.addEventListener("submit", function (e) {
   globalThis.inputNombre = document.getElementById("name").value;
   globalThis.inputCBU = document.getElementById("number").value;
   globalThis.inputAlias = document.getElementById("alias").value;
+  globalThis.inputCierre = document.getElementById("cierre").value;
 
-  if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0) {
+  if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0 && inputCierre != 0) {
     cbuxl.addEventListener("click", () => {
-      const texto = `Datos de nuestra cuenta:
-
-🔺 Nombre del Titular: *${inputNombre}*
-🔺 CBU: *${inputCBU}*
-🔺 Alias: *${inputAlias}*
-
-✅ SI QUIERE QUE SEA MAS RÁPIDA LA CARGA ENVIENOS EL USUARIO ASIGNADO DEBAJO DEL COMPROBANTE
-
-INGRESÁ ACÁ PARA JUGAR:
-https://citygame.casino`;
+      const texto = `Te dejo mi alias activo *hasta las ${inputCierre}hs*, esta a nombre de *${inputNombre}* ❤`;
       const elementoTemporal = document.createElement("textarea");
       elementoTemporal.value = texto;
       document.body.appendChild(elementoTemporal);
@@ -71,6 +63,7 @@ https://citygame.casino`;
     document.getElementById("name").value = "";
     document.getElementById("number").value = "";
     document.getElementById("alias").value = "";
+    document.getElementById("cierre").value = "";
   } else {
     alert("Por favor, completa todos los datos!!");
   }
