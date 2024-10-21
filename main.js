@@ -117,7 +117,7 @@ bienvenida.addEventListener("click", function (e) {
 
 ♦️ *Clave:* vip123
 
-*Regalo de bienvenida 100% de bonus* 🎁 ❤️
+*Regalo de bienvenida 150% de bonus* 🎁 ❤️
 
 💰 *CARGA MÍNIMA $1.000*
 
