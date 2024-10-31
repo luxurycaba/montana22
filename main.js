@@ -90,7 +90,7 @@ registrar.addEventListener("click", function (e) {
 
 ♦️ *Clave:* vip123
 
-Sitio web: https://casinodelmar.net 🎰
+Sitio web: http://kingcash7.net 🎰
 `;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
@@ -111,7 +111,7 @@ bienvenida.addEventListener("click", function (e) {
   let user = document.getElementById("usuario2").value;
   console.log(user);
 
-  const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  https://casinodelmar.net 
+  const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  http://kingcash7.net 
 
 ♦️ *Usuario:* ${user}
 
@@ -151,7 +151,7 @@ bienvenidaPubli.addEventListener("click", () => {
 
 Fichas cargadas, *MUCHOS EXITOS* 🤞🏼🍀
 
-Ya podes ingresar a nuestra web: https://casinodelmar.net 🎰
+Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
 ♦️ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
 `;
@@ -171,7 +171,7 @@ acreditadas.addEventListener("click", () => {
 
 Por cada referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
 
-Sitio web: https://casinodelmar.net`;
+Sitio web: http://kingcash7.net`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
