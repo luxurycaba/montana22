@@ -70,7 +70,7 @@ form.addEventListener("submit", function (e) {
 });
 
 nombreApodo.addEventListener("click", () => {
-  const texto = `Déjame un NOMBRE o APODO para generarte el usuario gratis asi comenzas a JUGAR ☺`;
+  const texto = `Dejame tu *NOMBRE* o *APODO* para generarte un usuario y enviarte toda la información asi comenzás a JUGAR ☺`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
