@@ -219,9 +219,9 @@ derivar.addEventListener("click", () => {
 });
 
 textoRecomendacion.addEventListener("click", () => {
-  const texto = `Montana te REGALA un 100% de bonificación en tu primer carga 🎁🤑 
+  const texto = `Montana te REGALA un 150% de bonificación en tu primer carga 🎁🤑 
 
-wa.link/referidosmontana`;
+wa.link/referidosvalumontana`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
@@ -234,7 +234,7 @@ wa.link/referidosmontana`;
 captura.addEventListener("click", () => {
   const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
 
-*Para el bonus extra del 100% porfavor enviame captura de como me agendaste* ❤️`;
+*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
   const elementoTemporal = document.createElement("textarea");
   elementoTemporal.value = texto;
   document.body.appendChild(elementoTemporal);
