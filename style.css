@@ -1,3 +1,4 @@
+/* Reseteo de márgenes y paddings */
 * {
   margin: 0;
   padding: 0;
@@ -11,219 +12,160 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("fondo.jpg");
-  background-position: center;
+  background-image: url("/fondo.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.pad-button,
-#pad-button-reg,
-#pad-button-reg2 {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.762);
-  border: none;
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.pad-button:hover,
-#pad-button-reg:hover,
-#pad-button-reg2:hover {
-  background-color: rgba(255, 255, 255, 0.959);
-  cursor: pointer;
-}
-
-.pad-button:active,
-#pad-button-reg:active,
-#pad-button-reg2:active {
-  background-color: rgba(0, 0, 0, 0.603);
-  color: white;
-}
-
-.pad-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  height: 100px;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 900px;
-  min-height: 250px;
-  background-color: rgba(25, 25, 25, 0.5);
-  border-radius: 45px;
-  padding: 10px;
-}
-
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 500px;
-  height: auto;
-  background-color: rgba(25, 25, 25, 0.5);
-  border-radius: 25px;
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.form {
+/* Contenedor de la barra de menú hamburguesa */
+.modal-hamburguesa {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Barras del menú hamburguesa */
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form label {
-  display: inline-block;
-  color: white;
-  width: 90px;
-  padding: 5px;
-  text-align: center;
-  font-size: 18px;
+/* Overlay2 */
+.overlay-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.form input {
-  font-size: 18px;
-  background: rgba(255, 255, 255, 0);
-  color: white;
-  border: 1px black solid;
-  padding-left: 5px;
+/* Estilos para el formulario */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  max-height: 100vh;
 }
 
-.form input::placeholder {
-  color: rgba(255, 255, 255, 0.759);
+form {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-button {
-  margin-top: 10px;
-  height: 30px;
-  width: 150px;
-  background: rgba(255, 255, 255, 0.762);
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 800;
+form label {
+  margin: 10px 0 5px;
 }
 
-.form-button:hover {
-  background-color: rgba(255, 255, 255, 0.959);
-  cursor: pointer;
-}
-.form-button:active {
-  background-color: rgba(0, 0, 0, 0.603);
-  color: white;
+form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+/* Input Number - Remove arrows */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #ffffff;
-  margin: 15% auto;
-  border: 1px solid #ffffff;
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 10px;
-}
-
-.close,
-.close2 {
-  margin: 5px 10px 0 0;
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  justify-self: end;
-  align-self: end;
-}
-
-.close:hover,
-.close2:hover,
-.close:focus,
-.close2:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 0 30px 0;
-}
-
-.modal-label {
-  display: inline-block;
-  color: black;
-  width: 300px;
-  padding: 5px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.modal-input {
-  font-size: 18px;
-  background: rgba(255, 255, 255, 0);
-  color: black;
-  border: 1px black solid;
-  padding-left: 5px;
-  outline-color: rgba(0, 0, 0, 0.8);
-  margin: 3px 0;
-}
-
-.modal-button {
-  margin-top: 10px;
-  height: 30px;
-  width: 150px;
-  background: rgb(0, 0, 0);
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.modal-button:hover {
-  background-color: rgba(255, 255, 255, 0.959);
-  cursor: pointer;
-  color: black;
-  border: 1px solid black;
-}
-
-.modal-button:active {
-  background-color: rgba(0, 0, 0, 0.853);
+form button {
+  padding: 10px;
+  background-color: #333;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* CONTENEDOR DE BOTONES */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.311);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* BOTONES */
+.btn-container {
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.btn-container:hover {
+  cursor: pointer;
+  background-color: rgba(212, 212, 212, 0.696);
+}
+
+.btn-container:active {
+  background-color: rgba(197, 43, 43, 0.91);
+}
+
+@media (max-height: 450px) {
+  form label {
+    font-size: 0.6rem;
+    margin: 0.1rem;
+  }
+
+  form input {
+    padding: 0.1rem;
+    margin-bottom: 0.1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  form button {
+    padding: 0.1rem;
+    margin-top: 0.4rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form h2 {
+    font-size: 0.9rem;
+  }
 }

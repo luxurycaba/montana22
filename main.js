@@ -1,152 +1,63 @@
-let cbuxl = document.getElementById("cbuxl");
-let cbu = document.getElementById("cbu");
-let nombreApodo = document.getElementById("nombreApodo");
-let bienvenida = document.getElementById("modal-button2");
-let registrar = document.getElementById("modal-button");
-let bienvenidaPubli = document.getElementById("bienvenidaPubli");
-let acreditadas = document.getElementById("acreditadas");
-let sistemaRecomendacion = document.getElementById("sistemaRecomendacion");
-let derivar = document.getElementById("derivar");
-let textoRecomendacion = document.getElementById("textoRecomendacion");
-let captura = document.getElementById("captura");
-let recomendacion = document.getElementById("recomendacion");
-let retiro = document.getElementById("retiro");
-let retiroExitoso = document.getElementById("retiroExitoso");
-let premioEnviado = document.getElementById("premioEnviado");
-let solicitarUsuario = document.getElementById("solicitarUsuario");
-let demoraCargas = document.getElementById("demoraCargas");
-let noIngreso = document.getElementById("noIngreso");
-let soporte = document.getElementById("soporte");
-let sistemaDePagos = document.getElementById("sistemaDePagos");
-let form = document.getElementById("form");
-let form_button = document.getElementById("formButton");
-let usuario = document.getElementById("usuario");
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("pad-button-reg");
-let span = document.getElementsByClassName("close")[0];
-let usuario2 = document.getElementById("usuario2");
-let modal2 = document.getElementById("myModal2");
-let btn2 = document.getElementById("pad-button-reg2");
-let span2 = document.getElementsByClassName("close2")[0];
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtener los elementos
+  const hamburguesaToggle = document.getElementById("modal-hamburguesa-toggle");
+  const titular = document.getElementById("btn-titular");
+  const cbu = document.getElementById("btn-cbu");
+  const nombreApodo = document.getElementById("btn-nombreApodo");
+  const btnBienvenida = document.getElementById("btn-bienvenida");
+  const btnRegistrarUsuario = document.getElementById("btn-registrarUsuario");
+  const bienvenidaPubli = document.getElementById("btn-bienvenidaPubli");
+  const acreditadas = document.getElementById("btn-acreditadas");
+  const sistemaDeReferidos = document.getElementById("btn-sistemaDeReferidos");
+  const derivar = document.getElementById("btn-derivar");
+  const bono = document.getElementById("btn-bono");
+  const captura = document.getElementById("btn-captura");
+  const textoDeReferidos = document.getElementById("btn-textoDeReferidos");
+  const retiro = document.getElementById("btn-retiro");
+  const retiroExitoso = document.getElementById("btn-retiroExitoso");
+  const premioEnviado = document.getElementById("btn-premioEnviado");
+  const solicitarUsuario = document.getElementById("btn-solicitarUsuario");
+  const demoraCargas = document.getElementById("btn-demoraCargas");
+  const noIngreso = document.getElementById("btn-noIngreso");
+  const soporte = document.getElementById("btn-soporte");
+  const sistemaDePagos = document.getElementById("btn-sistemaDePagos");
+  const overlay = document.getElementById("overlay");
+  const overlayBienvenida = document.getElementById("overlay-bienvenida");
+  const overlayRegistrar = document.getElementById("overlay-registrar");
+  const form = document.querySelector("form"); // Seleccionamos el primer formulario
+  const formBienvenida = document.querySelectorAll("form")[1]; // Seleccionamos el segundo formulario
+  const formRegistrar = document.querySelectorAll("form")[2]; // Seleccionamos el tercer formulario
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  let inputTitular, inputCBU, inputAlias, inputCierre;
+  let firstVisit = true;
 
-  globalThis.inputNombre = document.getElementById("name").value;
-  globalThis.inputCBU = document.getElementById("number").value;
-  globalThis.inputAlias = document.getElementById("alias").value;
-  globalThis.inputCierre = document.getElementById("cierre").value;
-
-  if (inputNombre.length != 0 && inputCBU != 0 && inputAlias.length != 0 && inputCierre != 0) {
-    cbuxl.addEventListener("click", () => {
-      const texto = `Te dejo mi alias activo *hasta las ${inputCierre}hs*, esta a nombre de *${inputNombre}* ❤`;
-      const elementoTemporal = document.createElement("textarea");
-      elementoTemporal.value = texto;
-      document.body.appendChild(elementoTemporal);
-      elementoTemporal.select();
-      elementoTemporal.setSelectionRange(0, 9999);
-      document.execCommand("copy");
-      document.body.removeChild(elementoTemporal);
-    });
-
-    cbu.addEventListener("click", () => {
-      const texto = `${inputCBU}`;
-      const elementoTemporal = document.createElement("textarea");
-      elementoTemporal.value = texto;
-      document.body.appendChild(elementoTemporal);
-      elementoTemporal.select();
-      elementoTemporal.setSelectionRange(0, 9999);
-      document.execCommand("copy");
-      document.body.removeChild(elementoTemporal);
-    });
-
-    document.getElementById("name").value = "";
-    document.getElementById("number").value = "";
-    document.getElementById("alias").value = "";
-    document.getElementById("cierre").value = "";
-  } else {
-    alert("Por favor, completa todos los datos!!");
+  // Funcion para copiar texto al portapapeles
+  function copyToClipboard(text) {
+    const elementoTemporal = document.createElement("textarea");
+    elementoTemporal.value = text;
+    document.body.appendChild(elementoTemporal);
+    elementoTemporal.select();
+    document.execCommand("copy");
+    document.body.removeChild(elementoTemporal);
   }
-});
 
-nombreApodo.addEventListener("click", () => {
-  const texto = `Dejame tu *NOMBRE* o *APODO* para generarte un usuario y enviarte toda la información asi comenzás a JUGAR ☺`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+  titular.addEventListener("click", () => {
+    const texto = `Te dejo mi alias activo *${inputCierre}hs*, esta a nombre de *${inputTitular}* ❤`;
+    copyToClipboard(texto);
+  });
 
-registrar.addEventListener("click", function (e) {
-  e.preventDefault();
-  let user = document.getElementById("usuario").value;
+  cbu.addEventListener("click", () => {
+    const texto = `${inputCBU}`;
+    copyToClipboard(texto);
+  });
 
-  const texto = `✅ USUARIO REGISTRAD@ ✅ 
+  nombreApodo.addEventListener("click", () => {
+    const texto = `Dejame tu *NOMBRE* o *APODO* para generarte un usuario y enviarte toda la información asi comenzás a JUGAR ☺`;
+    copyToClipboard(texto);
+  });
 
-♦️ *Usuario:* ${user}
-
-♦️ *Clave:* vip123
-
-Sitio web: http://kingcash7.net 🎰
-`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-
-  document.getElementById("usuario").value = "";
-
-  modal.style.display = "none";
-});
-
-
-bienvenida.addEventListener("click", function (e) {
-  e.preventDefault();
-  let user = document.getElementById("usuario2").value;
-  console.log(user);
-
-  const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  http://kingcash7.net 
-
-♦️ *Usuario:* ${user}
-
-♦️ *Clave:* vip123
-
-*Regalo de bienvenida 150% de bonus* 🎁 ❤️
-
-💰 *CARGA MÍNIMA $1.000*
-
-(Para mas info, solicita cronograma de pagos) 🏦
-
-*Te dejo los datos de mi cuenta para transferir* 👇🏼
-
-🔹 Nombre del Titular: *${inputNombre}*
-🔹 CBU: *${inputCBU}*
-🔹 Alias: *${inputAlias}*
-
-🚨 Consulta *SIEMPRE* cbu activo🚨
-
-Enviar debajo usuario y comprobante ⬇️`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-
-  document.getElementById("usuario2").value = "";
-
-  modal2.style.display = "none";
-});
-
-bienvenidaPubli.addEventListener("click", () => {
-  const texto = `Bienvenida/o a el numero…
+  bienvenidaPubli.addEventListener("click", () => {
+    const texto = `Bienvenida/o a el numero…
 🎲 *PRINCIPAL DE MONTANA* 🎲
 
 Fichas cargadas, *MUCHOS EXITOS* 🤞🏼🍀
@@ -155,34 +66,22 @@ Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
 ♦️ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
 `;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-acreditadas.addEventListener("click", () => {
-  const texto = `Fichas cargadas! Muchísima suerte🍀
+  acreditadas.addEventListener("click", () => {
+    const texto = `Fichas cargadas! Muchísima suerte🍀
 
 🎁 🔥 *NUEVA PROMO* 🔥 🎁
 
 Por cada referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
 
 Sitio web: http://kingcash7.net`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-sistemaRecomendacion.addEventListener("click", () => {
-  const texto = `👥 *SISTEMA DE REFERIDOS* 👥
+  sistemaDeReferidos.addEventListener("click", () => {
+    const texto = `👥 *SISTEMA DE REFERIDOS* 👥
 
 🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 3.000 FICHAS* 🎁🤑
 
@@ -191,61 +90,23 @@ sistemaRecomendacion.addEventListener("click", () => {
 🔺 Compartiendo el siguiente texto que te vamos a enviar debajo con quien vos quieras! Tiene el link que redirige a nuestro whatsapp
 
 🙌🏻🙌🏻 *SUPER FACIL* 🙌🏻🙌🏻`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-derivar.addEventListener("click", () => {
-  const texto = `Buenísimo!! Una pasito más 🙏🏼
+  derivar.addEventListener("click", () => {
+    const texto = `Buenísimo!! Una pasito más 🙏🏼
 
 *Para la carga de su saldo + el bonus escribime a mi WHATSAPP PRINCIPAL que le vamos a estar enviando debajo… Por favor envíenos:*
 
 ♦️Su usuario asignado 
 ♦️El comprobante de su transferencia 
 
-‪+54 9 3329 38‑9624`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
++54 9 3329 38‑9624`;
+    copyToClipboard(texto);
+  });
 
-textoRecomendacion.addEventListener("click", () => {
-  const texto = `Montana te REGALA un 150% de bonificación en tu primer carga 🎁🤑 
-
-wa.link/referidosvalumontana`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
-
-captura.addEventListener("click", () => {
-  const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
-
-*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
-
-recomendacion.addEventListener("click", () => {
-  const texto = `‼ *LEER ATENTAMENTE* ‼
+  bono.addEventListener("click", () => {
+    const texto = `‼ *LEER ATENTAMENTE* ‼
 
 👩🏼‍💻  *SISTEMA DE BONIFICACIÓNES:*
 
@@ -254,17 +115,25 @@ recomendacion.addEventListener("click", () => {
 🔺 Casino en vivo *NO* juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
 
 🔺 Hay algunos SLOTS que *NO* permiten el bono, otros que si. De igual forma, los que no permiten te avisan con un cartel, algunos no avisan pero te vas a dar cuenta porque no te figura el saldo TOTAL.`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-retiro.addEventListener("click", () => {
-  const texto = `*Cómo retirar tu 💰? envieme:*
+  captura.addEventListener("click", () => {
+    const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
+
+*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
+    copyToClipboard(texto);
+  });
+
+  textoDeReferidos.addEventListener("click", () => {
+    const texto = `Montana te REGALA un 150% de bonificación en tu primer carga 🎁🤑 
+
+wa.link/referidosvalumontana`;
+    copyToClipboard(texto);
+  });
+
+  retiro.addEventListener("click", () => {
+    const texto = `*Cómo retirar tu 💰? envieme:*
 
 1- Monto de su premio
 2- Su cbu o alias
@@ -281,17 +150,11 @@ PASO 3️⃣ : SALDO
 O desde la parte superior derecha donde esta la silueta de un usuario.
 
 Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la bonificación.`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-retiroExitoso.addEventListener("click", () => {
-  const texto = `✅ *SALDO RETIRADO* ✅ 
+  retiroExitoso.addEventListener("click", () => {
+    const texto = `✅ *SALDO RETIRADO* ✅ 
 
 🔺 Premio en fila  🙌🏻💸
 
@@ -300,84 +163,48 @@ retiroExitoso.addEventListener("click", () => {
 *POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 🙏🏻
 
 *CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-premioEnviado.addEventListener("click", () => {
-  const texto = `🥳 *PREMIO ENVIADO*🥳
+  premioEnviado.addEventListener("click", () => {
+    const texto = `🥳 *PREMIO ENVIADO*🥳
 
 Felicitaciones! Espero que lo disfrutes mucho 🫶🏽
 
 Mucha gracias por confiar en Montana 🫂
 
 Saludos: Valu ❤`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-solicitarUsuario.addEventListener("click", () => {
-  const texto = `*Recordá porfavor 🙏🏼 ENVIAR DEBAJO DEL COMPROBANTE TU USUARIO ASIGNADO 🙏🏼 para agilizar la carga de fichas*`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+  solicitarUsuario.addEventListener("click", () => {
+    const texto = `*Recordá porfavor 🙏🏼 ENVIAR DEBAJO DEL COMPROBANTE TU USUARIO ASIGNADO 🙏🏼 para agilizar la carga de fichas*`;
+    copyToClipboard(texto);
+  });
 
-demoraCargas.addEventListener("click", () => {
-  const texto = `Le comento que al estar en publicidad podemos tener un poco de *demora*, *SEA PACIENTE PORFAVOR* 🙏🏼vamos a responderle lo mas rápido posible. Contestamos por órden de llegada, si envía muchos mensajes luego del comprobante se posicióna *ÚLTIMO EN LA FILA!!!*`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+  demoraCargas.addEventListener("click", () => {
+    const texto = `Le comento que al estar en publicidad podemos tener un poco de *demora*, *SEA PACIENTE PORFAVOR* 🙏🏼vamos a responderle lo mas rápido posible. Contestamos por órden de llegada, si envía muchos mensajes luego del comprobante se posicióna *ÚLTIMO EN LA FILA!!!*`;
+    copyToClipboard(texto);
+  });
 
-noIngreso.addEventListener("click", () => {
-  const texto = `🚫 Tu transferencia todavía no impactó 🚫
+  noIngreso.addEventListener("click", () => {
+    const texto = `🚫 Tu transferencia todavía no impactó 🚫
 
 *Tené en cuenta que a veces las transferencias se demoran.*  🙏🏻
 
 *Por favor sea paciente, en cuanto impacte en nuestra cuenta, las fichas serán cargadas* 🙌🏻`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-soporte.addEventListener("click", () => {
-  const texto = `Por problemas e inconvenientes con la plataforma le solicitamos que *se comuníque con el whatsapp de soporte*. 📲
+  soporte.addEventListener("click", () => {
+    const texto = `Por problemas e inconvenientes con la plataforma le solicitamos que *se comuníque con el whatsapp de soporte*. 📲
 
 Puede encontrar el contacto en el menú de nuestra página, en la parte inferior del lado izquierdo donde figuran tres rayitas ☺️`;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
-});
+    copyToClipboard(texto);
+  });
 
-sistemaDePagos.addEventListener("click", () => {
-  const texto = `*Horarios de retiros* : 
+  sistemaDePagos.addEventListener("click", () => {
+    const texto = `*Horarios de retiros* : 
 
 ♦️ Días hábiles: De 13:00hs a 00:00hs 
 ♦️ Fines de semana: De 13:00hs a 02:00hs
@@ -393,35 +220,119 @@ sistemaDePagos.addEventListener("click", () => {
 
 ♦️ Para retiros superiores a $20.000, se permite solo un retiro cada 24 horas.
 `;
-  const elementoTemporal = document.createElement("textarea");
-  elementoTemporal.value = texto;
-  document.body.appendChild(elementoTemporal);
-  elementoTemporal.select();
-  elementoTemporal.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  document.body.removeChild(elementoTemporal);
+    copyToClipboard(texto);
+  });
+
+  // Función para abrir y cerrar el overlay del menú hamburguesa
+  hamburguesaToggle.addEventListener("click", function () {
+    if (overlay.style.display === "flex") {
+      overlay.style.display = "none"; // Cerrar overlay del menú hamburguesa
+    } else {
+      overlay.style.display = "flex"; // Abrir overlay del menú hamburguesa
+    }
+    document.getElementById("titular").focus();
+  });
+
+  // Función para abrir y cerrar el overlay del menú bienvenida
+  btnBienvenida.addEventListener("click", function () {
+    if (overlayBienvenida.style.display === "flex") {
+      overlayBienvenida.style.display = "none"; // Cerrar overlay del menú central
+    } else {
+      overlayBienvenida.style.display = "flex"; // Abrir overlay del menú central
+    }
+    document.getElementById("usuarioBienvenida").focus();
+  });
+
+  // Función para abrir y cerrar el overlay del menú registrar usuario
+  btnRegistrarUsuario.addEventListener("click", function () {
+    if (overlayRegistrar.style.display === "flex") {
+      overlayRegistrar.style.display = "none"; // Cerrar overlay del menú central
+    } else {
+      overlayRegistrar.style.display = "flex"; // Abrir overlay del menú central
+    }
+    document.getElementById("usuarioRegistrar").focus();
+  });
+
+  // Cerrar el overlay si se hace clic fuera del formulario del primer menú
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlay && !firstVisit) {
+      overlay.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
+      form.reset(); // Limpiar los campos del formulario
+    }
+  });
+
+  // Cerrar el overlay si se hace clic fuera del formulario del segundo menú
+  overlayBienvenida.addEventListener("click", function (e) {
+    if (e.target === overlayBienvenida) {
+      overlayBienvenida.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
+      form.reset(); // Limpiar los campos del formulario
+    }
+  });
+
+  // Cerrar el overlay si se hace clic fuera del formulario del tercer menú
+  overlayRegistrar.addEventListener("click", function (e) {
+    if (e.target === overlayRegistrar) {
+      overlayRegistrar.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
+      form.reset(); // Limpiar los campos del formulario
+    }
+  });
+
+  // Prevenir el envío del formulario y cerrar el overlay
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto del formulario
+    overlay.style.display = "none"; // Cerrar el overlay del primer menú
+    inputTitular = document.getElementById("titular").value.trim();
+    inputCBU = document.getElementById("cbu").value.trim();
+    inputAlias = document.getElementById("alias").value.trim();
+    inputCierre = document.getElementById("cierre").value.trim();
+    form.reset(); // Limpiar los campos del formulario
+    firstVisit = false;
+  });
+
+  // Prevenir el envío del formulario y cerrar el overlay del segundo menú
+  formBienvenida.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto del formulario
+    overlayBienvenida.style.display = "none"; // Cerrar el overlay del segundo menú
+    const user = document.getElementById("usuarioBienvenida").value.trim();
+    const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  http://kingcash7.net 
+
+♦️ *Usuario:* ${user}
+
+♦️ *Clave:* vip123
+
+*Regalo de bienvenida 150% de bonus* 🎁 ❤️
+
+💰 *CARGA MÍNIMA $1.000*
+
+(Para mas info, solicita cronograma de pagos) 🏦
+
+*Te dejo los datos de mi cuenta para transferir* 👇🏼
+
+🔹 Nombre del Titular: *${inputTitular}*
+🔹 CBU: *${inputCBU}*
+🔹 Alias: *${inputAlias}*
+
+🚨 Consulta *SIEMPRE* cbu activo🚨
+
+Enviar debajo usuario y comprobante ⬇️`;
+    copyToClipboard(texto);
+    formBienvenida.reset(); // Limpiar los campos del formulario
+  });
+
+  // Prevenir el envío del formulario y cerrar el overlay del tercer menú
+  formRegistrar.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto del formulario
+    overlayRegistrar.style.display = "none"; // Cerrar el overlay del tercer menú
+    const user = document.getElementById("usuarioRegistrar").value.trim();
+    const texto = `✅ USUARIO REGISTRAD@ ✅ 
+
+♦️ *Usuario:* ${user}
+
+♦️ *Clave:* vip123
+
+Sitio web: http://kingcash7.net 🎰
+`;
+    copyToClipboard(texto);
+    formRegistrar.reset(); // Limpiar los campos del formulario
+  });
 });
-
-btn.onclick = function () {
-  modal.style.display = "block";
-  usuario.focus();
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-btn2.onclick = function () {
-  modal2.style.display = "block";
-  usuario2.focus();
-};
-
-span2.onclick = function () {
-  modal2.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal || event.target == modal2) {
-    event.target.style.display = "none";
-  }
-};

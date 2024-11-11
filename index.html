@@ -2,197 +2,111 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MONTANA 22 | PAD</title>
-    <link rel="icon" href="./img/logo.ico" />
+    <title>PAD - MONTANA 22</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="form-container">
-      <form class="form" id="form">
-        <div class="form-name">
-          <label for="name">TITULAR:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Escriba el titular"
-          />
-        </div>
-        <div class="form-number">
-          <label for="number">CBU:</label>
-          <input
-            type="number"
-            name="number"
-            id="number"
-            placeholder="Escriba el CBU"
-          />
-        </div>
-        <div class="form-alias">
-          <label for="alias">ALIAS:</label>
-          <input
-            type="text"
-            name="alias"
-            id="alias"
-            placeholder="Escriba el alias"
-          />
-        </div>
-        <div class="form-cierre">
-          <label for="alias">CIERRE:</label>
-          <input
-            type="text"
-            name="cierre"
-            id="cierre"
-            placeholder="Escriba el cierre"
-          />
-        </div>
-        <div>
-          <button type="submit" class="form-button" id="formButton">CARGAR INFO</button>
-        </div>
-      </form>
+    <!-- Botón Menú Hamburguesa -->
+    <div class="modal-hamburguesa" id="modal-hamburguesa-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
 
     <div class="container">
-      <div class="pad-container">
-        <button class="pad-button" id="cbuxl">TITULAR</button>
-      </div>
+      <button class="btn-container" id="btn-titular">TITULAR</button>
+      <button class="btn-container" id="btn-cbu">CBU</button>
+      <button class="btn-container" id="btn-nombreApodo">NOMBRE O APODO</button>
+      <button class="btn-container modal-bienvenida" id="btn-bienvenida">
+        BIENVENIDA
+      </button>
+      <button class="btn-container modal-registrar" id="btn-registrarUsuario">
+        REGISTRAR USUARIO
+      </button>
+      <button class="btn-container" id="btn-bienvenidaPubli">
+        BIENVENIDA PUBLI
+      </button>
+      <button class="btn-container" id="btn-acreditadas">ACREDITADAS</button>
+      <button class="btn-container" id="btn-sistemaDeReferidos">
+        SISTEMA DE REFERIDOS
+      </button>
+      <button class="btn-container" id="btn-derivar">DERIVAR</button>
+      <button class="btn-container" id="btn-bono">BONO</button>
+      <button class="btn-container" id="btn-captura">CAPTURA</button>
+      <button class="btn-container" id="btn-textoDeReferidos">
+        TEXTO DE REFERIDOS
+      </button>
+      <button class="btn-container" id="btn-retiro">RETIRO</button>
+      <button class="btn-container" id="btn-retiroExitoso">
+        RETIRO EXITOSO
+      </button>
+      <button class="btn-container" id="btn-premioEnviado">
+        PREMIO ENVIADO
+      </button>
+      <button class="btn-container" id="btn-solicitarUsuario">
+        SOLICITAR USUARIO
+      </button>
+      <button class="btn-container" id="btn-demoraCargas">DEMORA CARGAS</button>
+      <button class="btn-container" id="btn-noIngreso">NO INGRESO</button>
+      <button class="btn-container" id="btn-soporte">SOPORTE</button>
+      <button class="btn-container" id="btn-sistemaDePagos">
+        SISTEMA DE PAGOS
+      </button>
+    </div>
 
-      <div class="pad-container">
-        <button class="pad-button" id="cbu">CBU</button>
+    <!-- Overlay 1 -->
+    <div class="overlay" id="overlay">
+      <!-- Formulario de menu hamburguesa -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar datos:</h2>
+          <label for="titular">TITULAR:</label>
+          <input type="text" id="titular" name="titular" required />
+          <label for="cbu">CBU:</label>
+          <input type="number" id="cbu" name="cbu" required />
+          <label for="alias">ALIAS:</label>
+          <input type="text" id="alias" name="alias" required />
+          <label for="cierre">CIERRE:</label>
+          <input type="text" id="cierre" name="cierre" required />
+          <button type="submit">Cargar Datos</button>
+        </form>
       </div>
+    </div>
 
-      <div class="pad-container">
-        <button class="pad-button" id="nombreApodo">NOMBRE APODO</button>
+    <!-- Overlay 2 -->
+    <div class="overlay-btn" id="overlay-bienvenida">
+      <!-- Formulario de bienvenida -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar usuario:</h2>
+          <input
+            type="text"
+            id="usuarioBienvenida"
+            name="usuarioBienvenida"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
       </div>
+    </div>
 
-      <div class="pad-container">
-        <button id="pad-button-reg2">BIENVENIDA</button>
-        <div id="myModal2" class="modal">
-          <div class="modal-content">
-            <span class="close2">&times;</span>
-            <form class="modal-form">
-              <label for="usuario2" class="modal-label">
-                NOMBRE DEL USUARIO
-              </label>
-              <input
-                type="text"
-                name="usuario2"
-                id="usuario2"
-                class="modal-input"
-                placeholder="Escriba el usuario"
-              />
-              <input
-                type="submit"
-                value="REGISTRAR"
-                class="modal-button"
-                id="modal-button2"
-              />
-            </form>
-          </div>
-        </div>
+    <!-- Overlay 3 -->
+    <div class="overlay-btn" id="overlay-registrar">
+      <!-- Formulario de bienvenida -->
+      <div class="form-container">
+        <form action="#" method="POST">
+          <h2>Ingresar usuario:</h2>
+          <input
+            type="text"
+            id="usuarioRegistrar"
+            name="usuarioRegistrar"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
       </div>
-
-      <div class="pad-container">
-        <button id="pad-button-reg">REGISTRAR USUARIO</button>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <form class="modal-form">
-              <label for="usuario" class="modal-label"
-                >NOMBRE DEL USUARIO</label
-              >
-              <input
-                type="text"
-                name="usuario"
-                id="usuario"
-                class="modal-input"
-                placeholder="Escriba el usuario"
-              />
-              <input
-                type="submit"
-                value="REGISTRAR"
-                class="modal-button"
-                id="modal-button"
-              />
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="bienvenidaPubli">
-          BIENVENIDA PUBLI
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="acreditadas">
-          ACREDITADAS
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="sistemaRecomendacion">
-          SISTEMA DE REFERIDOS
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="derivar">
-          DERIVAR
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="recomendacion">
-          BONO
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="captura">
-          CAPTURA
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="textoRecomendacion">
-          TEXTO DE REFERIDOS
-        </button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="retiro">RETIRO</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="retiroExitoso">RETIRO EXITOSO</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="premioEnviado">PREMIO ENVIADO</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="solicitarUsuario">SOLICITAR USUARIO</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="demoraCargas">DEMORA CARGAS</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="noIngreso">NO INGRESO</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="soporte">SOPORTE</button>
-      </div>
-
-      <div class="pad-container">
-        <button class="pad-button" id="sistemaDePagos">SISTEMA DE PAGOS</button>
-      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
