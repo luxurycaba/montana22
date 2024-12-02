@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   titular.addEventListener("click", () => {
-    const texto = `Te dejo mi alias activo *${inputCierre}hs*, esta a nombre de *${inputTitular}* ❤`;
+    const texto = `Te dejo mi alias/cbu activo hasta las *${inputCierre}hs*, esta a nombre de *${inputTitular}* ❤`;
     copyToClipboard(texto);
   });
 
