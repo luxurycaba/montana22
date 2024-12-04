@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   nombreApodo.addEventListener("click", () => {
-    const texto = `Dejame tu *NOMBRE* o *APODO* para generarte un usuario y enviarte toda la información asi comenzás a JUGAR ☺`;
+    const texto = `Hola! 😊 para generarte usuario déjame tu nombre o apodo 🙏🏻`;
     copyToClipboard(texto);
   });
 
@@ -119,9 +119,13 @@ Sitio web: http://kingcash7.net`;
   });
 
   captura.addEventListener("click", () => {
-    const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
+    const texto = `Mi nombre es Valu! 👩🏼‍💻 
 
-*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
+*Para el bonus extra del 150% enviame captura de que formas parte de mi canal* ❤️ 
+
+*Lo unico que tenes que hacer, es darle clic al enlace y unirte* 🙌🏻
+
+https://whatsapp.com/channel/0029VaoLNUSBPzjb87Fdhw3O`;
     copyToClipboard(texto);
   });
 
