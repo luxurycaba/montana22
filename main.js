@@ -119,13 +119,9 @@ Sitio web: http://kingcash7.net`;
   });
 
   captura.addEventListener("click", () => {
-    const texto = `Mi nombre es Valu! 👩🏼‍💻 
+    const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
 
-*Para el bonus extra del 150% enviame captura de que formas parte de mi canal* ❤️ 
-
-*Lo unico que tenes que hacer, es darle clic al enlace y unirte* 🙌🏻
-
-https://whatsapp.com/channel/0029VaoLNUSBPzjb87Fdhw3O`;
+*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
     copyToClipboard(texto);
   });
 
