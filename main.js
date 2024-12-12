@@ -101,7 +101,7 @@ Sitio web: http://kingcash7.net`;
 ♦️Su usuario asignado 
 ♦️El comprobante de su transferencia 
 
-+54 9 3329 38‑9624`;
++54 9 11 2694-6489`;
     copyToClipboard(texto);
   });
 
