@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   titular.addEventListener("click", () => {
-    const texto = `Te dejo mi alias/cbu activo hasta las *${inputCierre}hs*, esta a nombre de *${inputTitular}* ❤`;
+    const texto = `Te dejo mi alias/cbu activo hasta las *${inputCierre}hs*, esta a nombre de *${inputTitular}* ❤
+
+*Numero de respaldo:* +54 9 11 2694-6489`;
     copyToClipboard(texto);
   });
 
@@ -62,23 +64,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const texto = `Bienvenida/o a el numero…
 🎲 *PRINCIPAL DE MONTANA* 🎲
 
-Fichas cargadas, *MUCHOS EXITOS* 🤞🏼🍀
+Cargadas, *MUCHOS EXITOS* 🤞🏼🍀
 
 Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
 ♦️ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
+
+*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
   });
 
   acreditadas.addEventListener("click", () => {
-    const texto = `Fichas cargadas! Muchísima suerte🍀
+    const texto = `Cargadas! Muchos exitoss 🍀
 
-🎁 🔥 *NUEVA PROMO* 🔥 🎁
+Sitio web: http://kingcash7.net
 
-Por cada referido que venga de tu parte te regalamos *3.000 FICHAS GRATIS* 🤝
+🎁 🔥 *PROMO EXTRA* 🔥 🎁
 
-Sitio web: http://kingcash7.net`;
+Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝
+
+*Numero de respaldo*: +54 9 11 2694-6489`;
     copyToClipboard(texto);
   });
 
@@ -110,13 +116,11 @@ Sitio web: http://kingcash7.net`;
   bono.addEventListener("click", () => {
     const texto = `‼ *LEER ATENTAMENTE* ‼
 
-👩🏼‍💻  *SISTEMA DE BONIFICACIÓNES:*
+♦ La bonificación *NO* es retirable, pero te hace ganar fichas que *SI* lo son.
 
-🔺 La bonificación *NO* es retirable, pero te hace ganar fichas que SI lo son.
+♦ Casino en vivo *NO* juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
 
-🔺 Casino en vivo *NO* juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
-
-🔺 Hay algunos SLOTS que *NO* permiten el bono, otros que si. De igual forma, los que no permiten te avisan con un cartel, algunos no avisan pero te vas a dar cuenta porque no te figura el saldo TOTAL.`;
+♦ Hay algunos *SLOTS* que *NO* aplican el bono, son todos los que están en el sector *BUY BONUS*.`;
     copyToClipboard(texto);
   });
 
@@ -137,21 +141,20 @@ wa.link/referidosvalumontana`;
   retiro.addEventListener("click", () => {
     const texto = `*Cómo retirar tu 💰? envieme:*
 
-1- Monto de su premio
-2- Su cbu o alias
-3- Nombre completo del titular que recibe la transferencia
+🔺 Monto de su premio.
+🔺 Su cbu o alias.
+🔺 Nombre completo del titular.
 
-🔔 Recordatorio: *LA BONIFICACIÓN NO ES RETIRABLE* ‼️
+🔔 Recordatorio: *LA BONIFICACIÓN NO ES RETIRABLE* ‼
 
 Como ver cuanto puedo retirar?
 
-PASO 1️⃣ : MENÚ
-PASO 2️⃣ : MI CUENTA
-PASO 3️⃣ : SALDO
+PASO 1️⃣ : *Ir al símbolo de usuario*
+PASO 2️⃣ : *Saldo cobrable*
 
-O desde la parte superior derecha donde esta la silueta de un usuario.
+Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la bonificación.
 
-Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la bonificación.`;
+*Numero de respaldo:* +54 9 11 2694-6489`;
     copyToClipboard(texto);
   });
 
@@ -346,7 +349,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     const user = document.getElementById("usuarioBienvenida").value.trim();
     const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  http://kingcash7.net 
 
-♦️ *Usuario:* ${user}
+♦️ *Usuario:*  ${user}
 
 ♦️ *Clave:* vip123
 
@@ -358,13 +361,15 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 
 *Te dejo los datos de mi cuenta para transferir* 👇🏼
 
-🔹 Nombre del Titular: *${inputTitular}*
-🔹 CBU: *${inputCBU}*
-🔹 Alias: *${inputAlias}*
+🔹 Nombre del Titular: *Camila Ayelen Izquierdo*
+🔹 CBU: *0000085700234391341947*
+🔹 Alias: *23439134194.claropay*
 
 🚨 Consulta *SIEMPRE* cbu activo🚨
 
-Enviar debajo usuario y comprobante ⬇️`;
+Enviar debajo usuario y comprobante ⬇️
+
+*Numero de respaldo*: +54 9 11 2694-6489`;
     copyToClipboard(texto);
     formBienvenida.reset(); // Limpiar los campos del formulario
     document.body.style.overflow = "auto"; // Permitir desplazamiento del body
@@ -377,11 +382,13 @@ Enviar debajo usuario y comprobante ⬇️`;
     const user = document.getElementById("usuarioRegistrar").value.trim();
     const texto = `✅ USUARIO REGISTRAD@ ✅ 
 
+Sitio web: http://kingcash7.net 🎰
+
 ♦️ *Usuario:* ${user}
 
 ♦️ *Clave:* vip123
 
-Sitio web: http://kingcash7.net 🎰
+*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
     formRegistrar.reset(); // Limpiar los campos del formulario
@@ -393,17 +400,17 @@ Sitio web: http://kingcash7.net 🎰
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayRetiradas.style.display = "none"; // Cerrar el overlay del tercer menú
     const monto = document.getElementById("fichasRetiradas").value.trim();
-    const texto = `✅ *SALDO RETIRADO* ✅ 
+    const texto = `✅ *SALDO RETIRADO* ✅  
 
-FICHAS RETIRADAS = ${monto}
-
-🔺 Premio en fila  🙌🏻💸
+♦ Premio en fila: ${monto} 🙌🏻💸
 
 *Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 🫡
 
 *POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 🙏🏻
 
 *CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻
+
+*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
     formRetiradas.reset(); // Limpiar los campos del formulario
