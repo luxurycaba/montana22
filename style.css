@@ -16,6 +16,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /* Contenedor de la barra de menú hamburguesa */
@@ -50,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Evita que el fondo se desplace */
 }
 
 /* Overlay2 */
@@ -71,8 +73,12 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 300px;
-  max-height: 100vh;
+  width: 90%; /* Ajusta el tamaño del formulario */
+  max-width: 400px; /* Controla el tamaño máximo del formulario */
+  max-height: 90vh; /* Limita la altura del formulario para que no se salga de la pantalla */
+  overflow-y: auto; /* Permite el desplazamiento si es necesario */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox (barra transparente) */
 }
 
 form {
@@ -143,6 +149,13 @@ form button:hover {
   background-color: rgba(197, 43, 43, 0.91);
 }
 
+.no-select {
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Estándar */
+}
+
 @media (max-height: 450px) {
   form label {
     font-size: 0.6rem;
@@ -150,7 +163,7 @@ form button:hover {
   }
 
   form input {
-    padding: 0.1rem;
+    padding: 0.3rem;
     margin-bottom: 0.1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -167,5 +180,9 @@ form button:hover {
   }
   form h2 {
     font-size: 0.9rem;
+  }
+  .form-container {
+    width: 100%; /* El formulario ocupará el 100% de la pantalla */
+    max-height: 100vh; /* Aseguramos que el formulario no se salga de la pantalla */
   }
 }
