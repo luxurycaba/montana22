@@ -109,7 +109,7 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝
 ♦️Su usuario asignado 
 ♦️El comprobante de su transferencia 
 
-+54 9 11 2694-6489`;
++54 9 3329 38-9624`;
     copyToClipboard(texto);
   });
 
