@@ -361,9 +361,9 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 
 *Te dejo los datos de mi cuenta para transferir* 👇🏼
 
-🔹 Nombre del Titular: *Camila Ayelen Izquierdo*
-🔹 CBU: *0000085700234391341947*
-🔹 Alias: *23439134194.claropay*
+🔹 Nombre del Titular: *${inputTitular}*
+🔹 CBU: *${inputCBU}*
+🔹 Alias: *${inputAlias}*
 
 🚨 Consulta *SIEMPRE* cbu activo🚨
 
