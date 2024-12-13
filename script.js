@@ -402,7 +402,7 @@ Sitio web: http://kingcash7.net 🎰
     const monto = document.getElementById("fichasRetiradas").value.trim();
     const texto = `✅ *SALDO RETIRADO* ✅  
 
-♦ Premio en fila: ${monto} 🙌🏻💸
+♦ Premio en fila: *${monto}* 🙌🏻💸
 
 *Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 🫡
 
