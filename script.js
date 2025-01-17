@@ -288,7 +288,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
   overlayBienvenida.addEventListener("click", function (e) {
     if (e.target === overlayBienvenida) {
       overlayBienvenida.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formBienvenida.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -297,16 +297,16 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
   overlayRegistrar.addEventListener("click", function (e) {
     if (e.target === overlayRegistrar) {
       overlayRegistrar.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formRegistrar.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
 
-  // Cerrar el overlay si se hace clic fuera del formulario del cuerto menú
+  // Cerrar el overlay si se hace clic fuera del formulario del cuarto menú
   overlayRetiradas.addEventListener("click", function (e) {
     if (e.target === overlayRetiradas) {
       overlayRetiradas.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formRetiradas.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -315,7 +315,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
   overlayReferidoAcreditado.addEventListener("click", function (e) {
     if (e.target === overlayReferidoAcreditado) {
       overlayReferidoAcreditado.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formReferidoAcreditado.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -334,7 +334,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     if (event.key === "Escape") {
       // Verifica si la tecla presionada es Escape
       overlayBienvenida.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formBienvenida.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -343,7 +343,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     if (event.key === "Escape") {
       // Verifica si la tecla presionada es Escape
       overlayRegistrar.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formRegistrar.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -352,7 +352,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     if (event.key === "Escape") {
       // Verifica si la tecla presionada es Escape
       overlayRetiradas.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formRetiradas.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -361,7 +361,7 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     if (event.key === "Escape") {
       // Verifica si la tecla presionada es Escape
       overlayReferidoAcreditado.style.display = "none"; // Cerrar overlay si se hace clic fuera del formulario
-      form.reset(); // Limpiar los campos del formulario
+      formReferidoAcreditado.reset(); // Limpiar los campos del formulario
       document.body.style.overflow = "auto"; // Permitir desplazamiento del body
     }
   });
@@ -434,28 +434,6 @@ Sitio web: http://kingcash7.net 🎰
   formRetiradas.addEventListener("submit", function (e) {
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayRetiradas.style.display = "none"; // Cerrar el overlay del tercer menú
-    const monto = document.getElementById("fichasRetiradas").value.trim();
-    const texto = `✅ *SALDO RETIRADO* ✅  
-
-♦ Premio en fila: *${monto}* 🙌🏻💸
-
-*Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 🫡
-
-*POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 🙏🏻
-
-*CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻
-
-*Numero de respaldo:* +54 9 11 2694-6489
-`;
-    copyToClipboard(texto);
-    formRetiradas.reset(); // Limpiar los campos del formulario
-    document.body.style.overflow = "auto"; // Permitir desplazamiento del body
-  });
-
-  // Prevenir el envío del formulario y cerrar el overlay del cuarto menú
-  formRetiradas.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita el comportamiento por defecto del formulario
-    overlayRetiradas.style.display = "none"; // Cerrar el overlay del cuarto menú
     const monto = document.getElementById("fichasRetiradas").value.trim();
     const texto = `✅ *SALDO RETIRADO* ✅  
 
