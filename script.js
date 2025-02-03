@@ -48,11 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   titular.addEventListener("click", () => {
-    const texto = `Te dejo mi alias/cbu vigente! Por favor 🙏🏻 pasados los *5 MINUTOS CONSULTAR CBU NUEVAMENTE*, esta a nombre de *${inputTitular}* ❤️🍀
+    const texto = `Te dejo mi alias activo, para que puedas transferir, esta a nombre de *${inputTitular}* 🍀💯
 
-Sitio web: http://kingcash7.net 🎰    
-
-*Numero de respaldo:* +54 9 11 2694-6489`;
+🟢 *ALIAS*: ${inputAlias}`;
     copyToClipboard(texto);
   });
 
@@ -67,16 +65,13 @@ Sitio web: http://kingcash7.net 🎰
   });
 
   bienvenidaPubli.addEventListener("click", () => {
-    const texto = `Bienvenida/o a el numero…
-🎲 *PRINCIPAL DE MONTANA* 🎲
+    const texto = `Bienvenida/o a el numero oficial de *MONTANA* 💯🤑
 
-Cargadas, *MUCHOS EXITOS* 🤞🏼🍀
+Cargadas, *muchos exitos* 🤞🏼🍀
 
 Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
 ♦️ Te vamos a estar regalando en todas tus cargas diarias *50% de bono* 👏🏼🎁
-
-*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
   });
@@ -383,13 +378,12 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayBienvenida.style.display = "none"; // Cerrar el overlay del segundo menú
     const user = document.getElementById("usuarioBienvenida").value.trim();
-    const texto = `Listo! 🃏🎰 Ya podes ingresar a nuestra web:  http://kingcash7.net 
+    const texto = `*Regalo de bienvenida 150% de bonus* 🎁❤️
 
 ♦️ *Usuario:*  ${user}
-
 ♦️ *Clave:* vip123
 
-*Regalo de bienvenida 150% de bonus* 🎁 ❤️
+Ya podes ingresar a nuestra web: http://kingcash7.net 🃏🎰💯
 
 💰 *CARGA MÍNIMA $1.000*
 
@@ -398,12 +392,8 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 *Te dejo los datos de mi cuenta para transferir* 👇🏼
 
 🔹 Nombre del Titular: *${inputTitular}*
-🔹 CBU: *${inputCBU}*
-🔹 Alias: *${inputAlias}*
 
-🚨 Consultá *SIEMPRE* cbu activo *PASADOS LOS 5 MINUTOS*🚨
-
-Enviar debajo usuario y comprobante ⬇️
+🚨 Consultá *SIEMPRE* cbu activo 🚨
 `;
     copyToClipboard(texto);
     formBienvenida.reset(); // Limpiar los campos del formulario
