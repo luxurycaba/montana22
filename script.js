@@ -109,8 +109,7 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝
 
 ♦️Su usuario asignado 
 ♦️El comprobante de su transferencia 
-
-+54 9 11 2694-6489`;
+`;
     copyToClipboard(texto);
   });
 
@@ -156,8 +155,7 @@ PASO 1️⃣ : *Ir al símbolo de usuario*
 PASO 2️⃣ : *Saldo cobrable*
 
 Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la bonificación.
-
-*Numero de respaldo:* +54 9 11 2694-6489`;
+`;
     copyToClipboard(texto);
   });
 
@@ -413,7 +411,6 @@ Sitio web: http://kingcash7.net 🎰
 
 ♦️ *Clave:* vip123
 
-*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
     formRegistrar.reset(); // Limpiar los campos del formulario
@@ -435,7 +432,6 @@ Sitio web: http://kingcash7.net 🎰
 
 *CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻
 
-*Numero de respaldo:* +54 9 11 2694-6489
 `;
     copyToClipboard(texto);
     formRetiradas.reset(); // Limpiar los campos del formulario
