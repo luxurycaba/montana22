@@ -83,9 +83,7 @@ Sitio web: http://kingcash7.net
 
 🎁 🔥 *PROMO EXTRA* 🔥 🎁
 
-Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝
-
-*Numero de respaldo*: +54 9 11 2694-6489`;
+Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝`;
     copyToClipboard(texto);
   });
 
@@ -114,13 +112,13 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝
   });
 
   bono.addEventListener("click", () => {
-    const texto = `‼ *LEER ATENTAMENTE* ‼
+    const texto = `⬇️ *INFO IMPORTANTE* ⬇️
 
-♦ La bonificación *NO* es retirable, pero te hace ganar fichas que *SI* lo son.
+Hay juegos que *NO* permiten usar la bonificación, y estos se encuentran en la sección *BUY BONUS*. 
 
-♦ Casino en vivo *NO* juega con bonificaciones, antes de ingresar al sector te avisa con un cartel.
+Los juegos que SI permiten usarla son los que tienen *FS* en la imagen. En estos juegos, puedes gastar la bonificación sin problemas, y si ganas, el dinero ganado se podrá retirar! 🥳
 
-♦ Hay algunos *SLOTS* que *NO* aplican el bono, son todos los que están en el sector *BUY BONUS*.`;
+En caso de no usar la bonificación, no es posible retirarla 🚫`;
     copyToClipboard(texto);
   });
 
@@ -410,7 +408,6 @@ Sitio web: http://kingcash7.net 🎰
 ♦️ *Usuario:* ${user}
 
 ♦️ *Clave:* vip123
-
 `;
     copyToClipboard(texto);
     formRegistrar.reset(); // Limpiar los campos del formulario
@@ -426,12 +423,9 @@ Sitio web: http://kingcash7.net 🎰
 
 ♦ Premio en fila: *${monto}* 🙌🏻💸
 
-*Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante de pago cuando se haya efectuado! 🫡
+*Su premio ya se encuentra en el sector de pagos*. Le enviaremos el comprobante cuando se haya efectuado! 🫡
 
-*POR FAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 🙏🏻
-
-*CONTESTAMOS POR ORDEN DE LLEGADA, SINO PASARÁ A ESTAR ÚLTIMO EN LA FILA Y SE DEMORARÁ MÁS EL PAGO, SEA PACIENTE PORFAVOR* 😊🙏🏻
-
+*SEA PACIENTE PORFAVOR, NO RESPONDA NI REACCIONE A ESTE MENSAJE HASTA QUE LE ENVIEMOS SU PREMIO* 😊🙏🏻
 `;
     copyToClipboard(texto);
     formRetiradas.reset(); // Limpiar los campos del formulario
