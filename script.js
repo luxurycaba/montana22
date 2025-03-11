@@ -9,10 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sistemaDeReferidos = document.getElementById("btn-sistemaDeReferidos");
   const bono = document.getElementById("btn-bono");
   const captura = document.getElementById("btn-captura");
-  const textoDeReferidos = document.getElementById("btn-textoDeReferidos");
   const retiro = document.getElementById("btn-retiro");
   const retiroExitoso = document.getElementById("btn-retiroExitoso");
-  const premioEnviado = document.getElementById("btn-premioEnviado");
   const solicitarUsuario = document.getElementById("btn-solicitarUsuario");
   const referidoAcreditado = document.getElementById("btn-referidoAcreditado");
   const noIngreso = document.getElementById("btn-noIngreso");
@@ -93,15 +91,6 @@ En caso de no usar la bonificación, no es posible retirarla 🚫`;
 
   captura.addEventListener("click", () => {
     const texto = `Mi nombre es Valu! 👩🏼‍💻 *Para el bonus extra del 200% en tu carga porfavor enviame captura de como me agendaste* ❤️`;
-    copyToClipboard(texto);
-  });
-
-  textoDeReferidos.addEventListener("click", () => {
-    const texto = `Montana te *REGALA* un *150% de bonificación* en tu primer carga 🎁🤑 
-
-*PRESIONÁ EL LINK DE ABAJO PARA COMUNICARTE CON NOSOTROS!* 👇🏻
-
-wa.link/referidosvalumontana`;
     copyToClipboard(texto);
   });
 
