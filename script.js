@@ -113,17 +113,6 @@ Una vez que retiramos las fichas, el mismo sistema de la pagina también baja la
     copyToClipboard(texto);
   });
 
-  premioEnviado.addEventListener("click", () => {
-    const texto = `🥳 *PREMIO ENVIADO*🥳
-
-Felicitaciones! Espero que lo disfrutes mucho 🫶🏽
-
-Mucha gracias por confiar en Montana 🫂
-
-Saludos: Valu ❤`;
-    copyToClipboard(texto);
-  });
-
   solicitarUsuario.addEventListener("click", () => {
     const texto = `*Recordá porfavor 🙏🏼 ENVIAR DEBAJO DEL COMPROBANTE TU USUARIO ASIGNADO 🙏🏼 para agilizar la carga de fichas*`;
     copyToClipboard(texto);
@@ -339,8 +328,8 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 
 Sitio web: http://kingcash7.net
 
-🔺Minimo de carga *$1.000* 💸
-🔺Minimo de retiro *$3.000* 💸
+🔺Minimo de carga *$1.000*💸
+🔺Minimo de retiro *$3.000*💸
 🔺Atención las 24 hs ⏰
 🔺Bonus en todas tus cargas diarias 💃
 
