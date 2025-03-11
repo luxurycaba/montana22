@@ -71,11 +71,11 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝`
   sistemaDeReferidos.addEventListener("click", () => {
     const texto = `👥 *SISTEMA DE REFERIDOS* 👥
 
-🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 3.000 FICHAS* 🎁🤑
+🔺 Por cada conocido que venga de tu parte y comience a jugar con nosotros te *REGALAMOS 3.000 EN SALDO* 🎁🤑
 
 *¿Como invitar a tus amigos?*
 
-🔺 Compartiendo el siguiente texto que te vamos a enviar debajo con quien vos quieras! Tiene el link que redirige a nuestro whatsapp
+🔺 Compartiendo nuestro contacto, y que nos avise que viene de parte de tu usuario. 
 
 🙌🏻🙌🏻 *SUPER FACIL* 🙌🏻🙌🏻`;
     copyToClipboard(texto);
