@@ -1,15 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Obtener los elementos
   const hamburguesaToggle = document.getElementById("modal-hamburguesa-toggle");
-  const titular = document.getElementById("btn-titular");
   const cbu = document.getElementById("btn-cbu");
-  const nombreApodo = document.getElementById("btn-nombreApodo");
   const btnBienvenida = document.getElementById("btn-bienvenida");
   const btnRegistrarUsuario = document.getElementById("btn-registrarUsuario");
   const bienvenidaPubli = document.getElementById("btn-bienvenidaPubli");
   const acreditadas = document.getElementById("btn-acreditadas");
   const sistemaDeReferidos = document.getElementById("btn-sistemaDeReferidos");
-  const derivar = document.getElementById("btn-derivar");
   const bono = document.getElementById("btn-bono");
   const captura = document.getElementById("btn-captura");
   const textoDeReferidos = document.getElementById("btn-textoDeReferidos");
@@ -47,27 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.removeChild(elementoTemporal);
   }
 
-  titular.addEventListener("click", () => {
-    const texto = `Te dejo mi alias activo, para que puedas transferir, esta a nombre de *${inputTitular}* 🍀💯
-
-🟢 *ALIAS*: ${inputAlias}`;
-    copyToClipboard(texto);
-  });
-
   cbu.addEventListener("click", () => {
     const texto = `${inputCBU}`;
     copyToClipboard(texto);
   });
 
-  nombreApodo.addEventListener("click", () => {
-    const texto = `Hola! 😊 para generarte usuario déjame tu nombre o apodo 🙏🏻`;
-    copyToClipboard(texto);
-  });
-
   bienvenidaPubli.addEventListener("click", () => {
     const texto = `Bienvenida/o a el numero oficial de *MONTANA* 💯🤑
-
-Cargadas, *muchos exitos* 🤞🏼🍀
 
 Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
@@ -100,32 +83,16 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝`
     copyToClipboard(texto);
   });
 
-  derivar.addEventListener("click", () => {
-    const texto = `Buenísimo!! Una pasito más 🙏🏼
-
-*Para la carga de su saldo + el bonus escribime a mi WHATSAPP PRINCIPAL que le vamos a estar enviando debajo… Por favor envíenos:*
-
-♦️Su usuario asignado 
-♦️El comprobante de su transferencia 
-`;
-    copyToClipboard(texto);
-  });
-
   bono.addEventListener("click", () => {
     const texto = `⬇️ *INFO IMPORTANTE* ⬇️
 
 Hay juegos que *NO* permiten usar la bonificación, y estos se encuentran en la sección *BUY BONUS*. 
-
-Los juegos que SI permiten usarla son los que tienen *FS* en la imagen. En estos juegos, puedes gastar la bonificación sin problemas, y si ganas, el dinero ganado se podrá retirar! 🥳
-
 En caso de no usar la bonificación, no es posible retirarla 🚫`;
     copyToClipboard(texto);
   });
 
   captura.addEventListener("click", () => {
-    const texto = `Mi nombre es Valu! 👩🏼‍💻 Agendame asi podes ver a mis estados de whatsapp ☺
-
-*Para el bonus extra del 150% porfavor enviame captura de como me agendaste* ❤️`;
+    const texto = `Mi nombre es Valu! 👩🏼‍💻 *Para el bonus extra del 200% en tu carga porfavor enviame captura de como me agendaste* ❤️`;
     copyToClipboard(texto);
   });
 
@@ -190,21 +157,21 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
   });
 
   sistemaDePagos.addEventListener("click", () => {
-    const texto = `*Horarios de retiros* : 
+    const texto = `*Nuestro cronograma* : 
 
 ♦️ Días hábiles: De 13:00hs a 00:00hs 
 ♦️ Fines de semana: De 13:00hs a 02:00hs
 
 *Limite de retiros*:
 
-♦️Mínimo de retiro: $2.000
+♦️Mínimo de retiro: $3.000
 ♦️Máximo de retiro por día: $100.000
 
  *Importante* ‼⬇
 
-♦️ Usuario que retire desde $2.000 a $20.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
+♦️ Usuario que retire desde $2.000 a $30.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
 
-♦️ Para retiros superiores a $20.000, se permite solo un retiro cada 24 horas.
+♦️ Para retiros superiores a $30.000, se permite solo un retiro cada 24 horas.
 `;
     copyToClipboard(texto);
   });
@@ -374,22 +341,23 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayBienvenida.style.display = "none"; // Cerrar el overlay del segundo menú
     const user = document.getElementById("usuarioBienvenida").value.trim();
-    const texto = `*Regalo de bienvenida 150% de bonus* 🎁❤️
+    const texto = `Bienvenido a montana donde la emoción nunca se detiene 💯🎰
 
-♦️ *Usuario:*  ${user}
-♦️ *Clave:* vip123
+🎁🔥 *200% en tu primer deposito* 🔥🎁
 
-Ya podes ingresar a nuestra web: http://kingcash7.net 🃏🎰💯
+👩🏼‍💻Usuario: ${user}
+🔓Clave: vip123
 
-💰 *CARGA MÍNIMA $1.000*
+Sitio web: http://kingcash7.net
 
-(Para mas info, solicita cronograma de pagos) 🏦
+🔺Minimo de carga *$1.000* 💸
+🔺Minimo de retiro *$3.000* 💸
+🔺Atención las 24 hs ⏰
+🔺Bonus en todas tus cargas diarias 💃
 
-*Te dejo los datos de mi cuenta para transferir* 👇🏼
+ (Consultar por cronograma de pagos) 🙏🏻
 
-🔹 Nombre del Titular: *${inputTitular}*
-
-🚨 Consultá *SIEMPRE* cbu activo 🚨
+En caso de querer cargar, solicitar cvu👇🏼👇🏼
 `;
     copyToClipboard(texto);
     formBienvenida.reset(); // Limpiar los campos del formulario
