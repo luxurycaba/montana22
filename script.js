@@ -84,7 +84,9 @@ Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝`
   bono.addEventListener("click", () => {
     const texto = `⬇️ *INFO IMPORTANTE* ⬇️
 
-Hay juegos que *NO* permiten usar la bonificación, y estos se encuentran en la sección *BUY BONUS*. 
+📣 Consultar por cvu disponible siempre antes de transferir, van rotando por turnos 🙏🏻
+
+📣 Hay juegos que *NO* permiten usar la bonificación, y estos se encuentran en la sección *BUY BONUS*. 
 En caso de no usar la bonificación, no es posible retirarla 🚫`;
     copyToClipboard(texto);
   });
@@ -139,17 +141,21 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
 
 ♦️ Días hábiles: De 13:00hs a 00:00hs 
 ♦️ Fines de semana: De 13:00hs a 02:00hs
-
-*Limite de retiros*:
-
 ♦️Mínimo de retiro: $3.000
-♦️Máximo de retiro por día: $100.000
 
  *Importante* ‼⬇
 
 ♦️ Usuario que retire desde $2.000 a $30.000 puede realizar un retiro mas, luego se tiene que cumplir 24hs para volver a retirar
 
-♦️ Para retiros superiores a $30.000, se permite solo un retiro cada 24 horas.
+♦️ Para retiros superiores a $30.000, se permite solo un retiro cada 24 horas.
+
+💥 *MAXIMO DE RETIRO DEPENDIENDO DE LA CARGA* ⬇️⬇️
+
+♦️Si la carga es menor a 50.000 puede retirar hasta 100.000 diarias 💪🏼
+
+♦️Si la carga apartir de 50.000 puede retirar hasta 150.000 🫰🏼
+
+♦️Si la carga es apartir de 100.000 puede retirar hasta 200.000 diarios 🙌🏻
 `;
     copyToClipboard(texto);
   });
@@ -319,23 +325,22 @@ Puede encontrar el contacto en el menú de nuestra página, en la parte inferior
     e.preventDefault(); // Evita el comportamiento por defecto del formulario
     overlayBienvenida.style.display = "none"; // Cerrar el overlay del segundo menú
     const user = document.getElementById("usuarioBienvenida").value.trim();
-    const texto = `Bienvenido a montana donde la emoción nunca se detiene 💯🎰
+    const texto = `¡Bienvenid@ a MONTANA c4sin0! 🎰🔥 Tu suerte arranca HOY 🍀🫰🏼
 
-🎁🔥 *200% en tu primer deposito* 🔥🎁
+💥 *200% de b0n0 de regalo en tu primer deposito*💃
+💥 *150% en tu segunda c4rg4* 😱
 
-👩🏼‍💻Usuario: ${user}
-🔓Clave: vip123
+📲 Usu4rio: ${user}
+🔐 Cl4ve: vip123
 
-Sitio web: http://kingcash7.net
+L1NK: https://kingcash7.net 🫰🏼
 
-🔺Minimo de carga *$1.000*💸
-🔺Minimo de retiro *$3.000*💸
-🔺Atención las 24 hs ⏰
-🔺Bonus en todas tus cargas diarias 💃
+🔺M1n1mo de c4rg4: *$1.000*
+🔺M1n1m0 de retiro: *$3.000*
+🔺 Atencion las 24 hs 🕒
+🔺B0nus en todas tus c4rgas diarias 💃🥳
 
- (Consultar por cronograma de pagos) 🙏🏻
-
-En caso de querer cargar, solicitar cvu👇🏼👇🏼
+Te envio 4li4s? confirmame 🥰
 `;
     copyToClipboard(texto);
     formBienvenida.reset(); // Limpiar los campos del formulario
