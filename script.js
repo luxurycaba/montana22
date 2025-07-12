@@ -62,9 +62,9 @@ Ya podes ingresar a nuestra web: http://kingcash7.net 🎰
 
 Sitio web: http://kingcash7.net
 
-🎁 🔥 *PROMO EXTRA* 🔥 🎁
+🎁 🔥 *FICHAS DE REGALO* 🔥 🎁
 
-Por cada referido que venga de tu parte te regalamos *3.000 fichas GRATIS* 🤝`;
+Por cada referido que venga de tu parte y comience a jugar te regalamos *4.500 fichas GRATIS* 🤝`;
     copyToClipboard(texto);
   });
 
